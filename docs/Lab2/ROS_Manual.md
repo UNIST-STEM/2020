@@ -239,10 +239,10 @@ servo노드가 50이라는 메시지를 받으면 서보모터가 50도에 맞�
 
 이번에는 talker.py 를 수정하여 servo라는 토픽으로 각도 정보를 발행(Publish)해보자.
 
-        Hint
-          1.	정수로 된 메시지를 publish해야 하기 때문에 아래의 구문을 추가한다.
+Hint
+      1. 정수로 된 메시지를 publish해야 하기 때문에 아래의 구문을 추가한다.
               import std_msgs.msg import UInt16
-          2.	각도를 입력 받기 위해 input 함수를 사용한다.
+      2. 각도를 입력 받기 위해 input 함수를 사용한다.
 
 파일을 작성한 후, catkin_ws 폴더로 나가서 catkin_make를 실행한다.
 
