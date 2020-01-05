@@ -10,7 +10,7 @@ page:
   - Lab3:
     - Python_Class_Manual : 'Lab3/Python_Class_Manual.md'
   - Lab4:
-    - Tello_Manual : 'Lab4/Lab4.md'
+    - Tello_Manual : 'Lab4/Tello.md'
   - Lab5:
     - Color Segmentation : 'Lab5/Color Segmentation.md'
     - Line Following : 'Lab5/Line Follwoing.md'
