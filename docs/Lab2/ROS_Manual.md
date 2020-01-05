@@ -226,7 +226,7 @@ ROS workstation을 설치한다.
 
 새 터미널에서 ros-serial을 실행한다.
 
-      $ rosrun rosserial_python serial_node.py \_port=/dev/ttyACM0
+      $ rosrun rosserial_python serial_node.py _port=/dev/ttyACM0
 
 새 터미널을 연다.
 
@@ -256,7 +256,7 @@ Hint
 
 다른 터미널을 열어서 ros 시리얼을 실행한다.
 
-      $ rosrun rosserial_python serial_node.py \_port:=.dev/ttyACM0
+      $ rosrun rosserial_python serial_node.py _port:=.dev/ttyACM0
 
 다른 터미널을 열어서 talker.py를 실행한다.
 
