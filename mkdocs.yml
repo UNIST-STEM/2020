@@ -5,6 +5,7 @@ page:
   - Home: index.md
   - Lab1:
   - Lab2:
+    - ROS_Manual : 'Lab2/ROS_Manual.md'
   - Lab3:
     - Python_Class_Manual : 'Lab3/Python_Class_Manual.md'
   - Lab4:
@@ -12,8 +13,6 @@ page:
   - Lab5:
     - Color Segmentation : 'Lab5/Color Segmentation.md'
     - Line Following : 'Lab5/Line Follwoing.md'
-  - Lab6: 
+  - Lab6:
   - Tello_Manual: Tello_Manual.md
   - Python_Class: Python_Class_Manual.md
-
-
