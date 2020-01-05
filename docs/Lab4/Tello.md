@@ -1,6 +1,6 @@
 # TELLO란 무엇인가?
 
-![tello_edu_drone](tello_edu_drone.jpg)
+![tello_edu_drone](tello-edu-drone.jpg)
 
 RYZE 사에서 만든 미니드론으로 핸드폰 어플리케이션과 연동시켜서 사용할 수 있고, 카메라를 통한 사진과 영상 촬영 기능과 다양한 조작 기능을 제공하고 있다.
 
@@ -11,13 +11,26 @@ RYZE 사에서 만든 미니드론으로 핸드폰 어플리케이션과 연동�
 
 ## 어플리케이션을 이용한 조작
 
+      Android : https://play.google.com/store/apps/details?id=com.ryzerobotics.tello
+      Apple :
+
+
+![Tello_appication_not_linked](Tello_appication_not_linked.png)
+
+
 1.	모바일 장치에서 WIFI 기능을 활성화시킨 후, TELLO-xxxxxx 네트워크를 선택한다.
 
   <span style="color:red">__“주의”__</span> _네트워크 연결 시 다른 기기와 연결되어서 드론이 비행하여 다칠 수 있으므로 각 팀별 TELLO의 고유번호를 잘 파악하여서 연결해야 한다._
 
-![Tello_application_imgae](Tello_application_imgae.PNG)
 
-2.	텔로를 자유롭게 조작한다.
+2.  텔로 어플리케이션을 실행하고 텔로를 활성화시킨다.
+
+
+![Tello_application_image](Tello_application_image.PNG)
+
+![tello_application_image_real](tello_application_image_real.png)
+
+3.	텔로를 자유롭게 조작한다.
 
   <span style="color:red">__“주의”__</span> _드론끼리의 충돌, 드론 날개의 직접적인 충돌로 부상이 생길 수 있으니 충분한 공간을 확보한 뒤에 드론을 비행하고 조작해보도록 한다._
 
@@ -31,7 +44,7 @@ RYZE 사에서 만든 미니드론으로 핸드폰 어플리케이션과 연동�
 
 드론과 노트북을 연결해서 키보드로 드론을 조작해보기
 
-[참고 – 드론 명령어]
+###참고 – 드론 명령어
 
 |명령어|설명|출력 예상 문구|
 |-----|----|-------------|
