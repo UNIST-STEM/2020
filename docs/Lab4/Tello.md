@@ -1,6 +1,6 @@
-# TELLO란 무엇인가?
-
 ![tello_edu_drone](img/tello-edu-drone.jpg)
+
+# TELLO란 무엇인가?
 
 RYZE 사에서 만든 미니드론으로 핸드폰 어플리케이션과 연동시켜서 사용할 수 있고, 카메라를 통한 사진과 영상 촬영 기능과 다양한 조작 기능을 제공하고 있다.
 
@@ -11,8 +11,8 @@ RYZE 사에서 만든 미니드론으로 핸드폰 어플리케이션과 연동�
 
 ## 어플리케이션을 이용한 조작
 
-      Android : _https://play.google.com/store/apps/details?id=com.ryzerobotics.tello_
-      Apple : _https://apps.apple.com/kr/app/tello/id1330559633_
+      Android  https://play.google.com/store/apps/details?id=com.ryzerobotics.tello_
+      Apple  https://apps.apple.com/kr/app/tello/id1330559633_
 
 
 ![Tello_appication_not_linked](img/Tello_appication_not_linked.png)
@@ -25,8 +25,6 @@ RYZE 사에서 만든 미니드론으로 핸드폰 어플리케이션과 연동�
 
 2.  텔로 어플리케이션을 실행하고 텔로를 활성화시킨다.
 
-
-![Tello_application_image](img/Tello_application_image.PNG)
 
 ![tello_application_image_real](img/tello_application_image_real.png)
 
