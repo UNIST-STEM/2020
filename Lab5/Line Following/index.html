@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Line Following - Tello Tutorials</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Line Following";
+    var mkdocs_page_input_path = "Lab5\\Line Following.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Tello Tutorials</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Welcome to MkDocs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab3</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../Lab3/Python_Class_Manual/">파이썬(PYTHON)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab4</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../Lab4/Lab4/">TELLO</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab5</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../Color Segmentation and openCV/">Color Segmentation and oepnCV</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Line Following</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#line-following">Line Following</a></li>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Tello Tutorials</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Lab5 &raquo;</li>
+        
+      
+    
+    <li>Line Following</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="line-following">Line Following</h1>
+<p>이번 주 마지막 도전을 위해, 여러분은 바닥에 놓인 컬러 테이프를 따라 코스의 결승선에 오르기 위해 경주용 자동차를 프로그래밍해야 할 것이다. 당신의 차는 두 가지 일을 해야 한다.</p>
+<ol>
+<li>자신이 선택한 색상 선과 다른 색상 선을 다르게 인식</li>
+<li>컬러 테이프에 의존에서 목표 지점까지 도달</li>
+</ol>
+<p>우선 우리가 작성해야 하는 함수는 두개이다.
+ 두 함수 모두 <code>line Follow.py</code> 파일 안에 있는 함수다.</p>
+<p><code>size_calc()</code> 함수와 <code>drive_car_callback()</code> 함수를 작성해야 한다.</p>
+<p>두 함수를 작성하기 위해서는 <code>color_segmentation.py</code> 에 있는 <code>cd_color_segmentation()</code> 함수를 이해해야 하는데 이 함수의 역할은 여러분이 앞선 강좌인 <code>Color Segmentation</code> 에서 설정한 HSV 필터를 통해 인식된 특정 색의 물체를 박스로 표시해주는 역할을 하는 함수이다. 이 함수의 return 값은 표시된 박스의 각 모서리 좌표값이다. </p>
+<p><code>이 링크</code> 에 들어가면
+ color_segmentation 및 driveNode의 빈 복사본에 대한 링크가 여기에 있다. color_segmentation에서 IMAGE_TOPIC("/zze_node/color_seg_output") 항목으로 이미지를 게시하도록 드라이브Node 및 color_segation이 수정되었다. 이전에 사용했던 것과 동일한 명령어를 사용하여 도커에 로그인하되, 피쉬버그/레이스카 다음에 스페이스와 자동차 번호를 추가하십시오. 그런 다음 도커에서 rqt_image_view를 열고 color_seg_output 항목을 선택하여 color_seg 필터 후 zed 카메라 피드를 볼 수 있다. "연결 유효하지 않은" 오류가 발생하면 무시하십시오. 어쨌든 작동하는 경향이 있습니다.</p>
+<p>추가한 출판사 것 말고도, 이것들은 기본적으로 빈 파일들이야. 네가 원하는 대로 마음대로 가지고 다니렴.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../Color Segmentation and openCV/" class="btn btn-neutral" title="Color Segmentation and oepnCV"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Color Segmentation and openCV/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
