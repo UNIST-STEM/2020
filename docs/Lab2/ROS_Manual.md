@@ -41,7 +41,7 @@ Catkin_ws 폴더로 다시 이동한 후 catkin_make를 실행한다.
 ## 5. 노드(Node), 토픽(Topic)에 대한 이해 (Turtlesim)
 
 노드(NODE) - 노드는 계산을 수행하는 프로세스다. 각각의 노드는 개별적인 작업을 수행하고 있고, 노드와 노드는 서로간의 메세지 통신을 통해서 데이터와 명령을 주고받는다.
-토픽(TOPIC) - 노드에서 노드간에 주고 받는 메세지에 특정 주제를 게시(Publish)하여서 메세지를 발송할 수 있다. 이 특정 주제에 관심이 있는(주제와 관련된 메세지를 받아야 하는) 노드는 이 주제에 대한 구독(Subscribe)할 수 있다.  
+토픽(TOPIC) - 노드에서 노드간에 주고 받는 메세지에 특정 주제를 발행(Publish)하여서 메세지를 발송할 수 있다. 이 특정 주제에 관심이 있는(주제와 관련된 메세지를 받아야 하는) 노드는 이 주제에 대한 구독(Subscribe)할 수 있다.  
 메세지(Message) - 노드간에 주고 받는 데이터 형식이며, 특정 유형의 데이터 타입으로 구성된다.
 
 ![ROS_basic_concepts](img/ROS_basic_concepts.png)
@@ -77,10 +77,169 @@ Turtle_teleop_key 노드를 실행시킨다.
 
     $rqt_graph
 
-/teleop_turtle 노드가 /turtle1/cmd_vel 이라는 토픽을 게시(Publish)하고, /turtlesim 노드가 이를 구독(Subscribe)하는 것을 볼 수 있다.
+/teleop_turtle 노드가 /turtle1/cmd_vel 이라는 토픽을 발행(Publish)하고, /turtlesim 노드가 이를 구독(Subscribe)하는 것을 볼 수 있다.
 
     $rostopic echo /turtle1/cmd_vel
 
 /turtle1/cmd_vel 에서 전달되는 메시지를 확인할 수 있는데 어떤 방향키를 누르는지에 따라 주제(Topic)의 메시지가 바뀌는 것을 확인할 수 있다.
 
 다시 rqt 창으로 돌아가 refresh버튼을 누르면 /turtle1/cmd_vel를 구독(subscribe)하는 노드가 하나 더 생긴 것을 확인할 수 있다. 이를 통해 토픽이 일대일 형식이 아니라 여러 노드 사이에서 전달될 수 있음을 확인할 수 있다.
+
+## 6. 발행자(Publisher), 구독자(Subscriber) 노드 작성하기
+
+### 발행자(Publisher) 만들기
+
+연속적으로 메세지를 송출하는 발행자 노드(Publisher Node)인 "Talker"를 생성해 볼 것이다.
+튜토리얼 패키지에 들어간다
+
+    $ roscd beginner_tutorials
+
+Scripts 폴더를 생성한다.
+
+    $ mkdir scripts
+    $ cd scripts
+
+Talker.py 파일을 만든다.
+
+    $ wget https://raw.github.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/001_talker_listener/talker.py
+
+파일을 활성화시킨 후, Vi 에디터로 코드를 확인해볼 수 있다.
+
+    $ chmod +x talker.py
+    $ vi talker.py
+
+        1 #!/usr/bin/env python
+
+파이썬 환경에서 실행한다는 의미로 모든 ROS 노드는 위 코드를 가장 위에 선언해 둔다.
+01- line > 스크립트가 실행가능한지를 확인한다.
+
+        2 import rospy
+        3 from std_msgs.msg import String
+
+02 - line > python으로 ROS 노드를 작성할 때는 rospy는 사용해야 한다.
+03 - line > std_msgs/String 메세지 타입을 발행(Publish)할 수 있도록 한다.
+
+        4 def talker():
+        5     pub = rospy.Publisher('chatter', String, queue_size = 10)
+        6     rospy.init_node('talker', anonymous = True)
+        7     rate = rospy.Rate(10)
+
+05 - line > String 메세지 타입을 사용하는 chatter 토픽에게 발행(Publish)한다는 것을 선언한다.
+06 - line > rospy.init_node(NAME)은 rospy에게 노드의 이름을 알려주는 것이다. rospy가 이 정보를 얻기 전까지는 ROS Master와 통신이 시작되지 않는다. 'anonymous = True' 는 rospy.init_node()의 이름으로 사용되는 인수가 다른 이름과 겹치지 않고 유일해야 하는데 이를 해제시키는 역할을 한다. 즉, 복수의 talker.py 노드를 실행할 수 있게 만든다.
+
+        8     while not rospy.is_shutdown():
+        9           hello_str = "hello world %s" %rospy.get_time()
+        10          rospy.loginfo(hello_str)
+        11          pub.publish(hello_str)
+        12          rate.sleep()
+
+08 - line > rospy.is_shutdown()를 확인하면서 루프를 돌리게 된다. 즉, 사용자가 Ctrl + c를 눌러 작동을 멈추기 전까지는 계속 루프를 돌린다는 의미이다.
+09 - line > 지정된 string 구문에 시간 정보를 붙여서 hello_str 이라는 변수에 저장한다.
+10 - line > 이 코드는 세가지를 실행한다. 첫째, 화면에 프린트를 한다. 둘째, 노드의 로그 파일에 기록한다. 셋째, rosout에 기록한다. rosout에 기록된 내용으로 디버깅이 유용해진다.
+11 - line > 이전에 선언된 pub에 hello_str 변수에 해당되는 텍스트를 발행(Publish)하게 된다.
+12 - line > 지정된 시간만큼 딜레이시키는 역할을 한다.
+
+        13 if __name__ == '__main__':
+        14     try:
+        15         talker()
+        16     except rospy.ROSInterruptException: pass
+
+standard python에 __main__ 체크 구문을 추가하는 내용으로 일치할 경우에만 talker()가 수행된다.
+
+### 구독자(Subscriber) 만들기
+
+연속으로 메세지를 구독(Subscribe)하는 구독자 노드(Subscriber Node)를 생성해 볼 것이다.
+
+Listener.py 파일을 받는다.
+
+    $ roscd beginner_tutorials/scripts/
+    $ wget https://raw.github.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/001_talker_listener/listener.py
+
+파일을 활성화시킨 후, Vi 에디터로 코드를 확인한다.
+
+    $ chmod +x listener.py
+
+다음은 Listener.py의 코드이다.
+
+          1 #!/usr/bin/env python
+          2 import rospy
+          3 from std_msgs.msg import String
+          4 def callback(data):
+          5     rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
+          6 def listener():
+          7     rospy.init_node('listener', anonymous=True)
+          8     rospy.Subscriber("chatter", String, callback)
+          9     rospy.spin()
+          10 if __name__ == '__main__' : listener()
+
+8 - line > 사용자의 노드가 std.msgs.msgs.String 의 형태의 타입의 메세지를 chatter 토픽으로부터 구독한다는 선언이다. 새로운 메세지를 수신했을 때, callback은 그 메세지를 첫번째 변수로 불러오게 된다.
+9 - line > 사용자의 노드가 종료되기 전까지 python이 종료되는 것을 막는다.
+
+Catkin_ws 폴더로 나가서 catkin_make를 실행한다.
+
+      $ catkin_make
+      $ source devel/setup.bash
+
+Roscore를 실행한다.
+
+      $ roscore
+
+새 터미널에서 listener.py 를 실행한다.
+
+      $ rosrun beginner_tutorials listener.py
+
+새 터미널에서 talker.py 를 실행한다.
+
+      $ rosrun beginner_tutorials talker.py
+
+listener 노드가 talker 노드에서 발행(Publish)한 메세지를 구독(Subscribe)하여 출력한 것을 확인할 수 있다.
+
+
+### 과제 - 아두이노를 ROS를 이용하여 서보모터를 돌려보자
+
+터미널을 열고 아두이노를 설치한다.
+
+      $ sudo apt-get install Arduino
+
+ROS workstation을 설치한다.
+
+      $ sudo apt-get install ros-melodic-rosserial-arduino
+      $ sudo apt-get install ros-melodic-rosserial
+      $ cd sketchbook/libraries
+      $ rm -rf ros_lib
+      $ rosrun rosserial_arduino make_libraries.py
+
+설치를 완료하고 아두이노와 서보모터를 그림과 같이 연결한다.
+
+![arduino_motor](img/arduino_motor.png)
+
+아두이노를 실행한다.
+
+      $ arduino
+
+[파일] -> [예제] -> [ros_lib] -> [ServoControl] 클릭
+[도구] -> [시리얼포트] -> [/dev/tty/ACM0] 클릭
+
+새 터미널에서 roscore를 실행한다.
+
+      $ roscore
+
+새 터미널에서 ros-serial을 실행한다.
+
+      $ rosrun rosserial_python serial_node.py _ _port=/dev/ttyACM0_
+
+새 터미널을 연다.
+
+      $ rostopic pub /servo std_msgs/UInt16 50 --once
+
+50이라는 메세지를 /servo라는 노드에 발행(Publish)한다.
+
+servo노드가 50이라는 메시지를 받으면 서보모터가 50도에 맞춰 돌아가게 된다.
+0~180도의 각도를 임의로 설정하여 발행(Publish) 해보자.
+
+이번에는 talker.py 를 수정하여 servo라는 토픽으로 각도 정보를 발행(Publish)해보자.
+
+        Hint
+          1.	정수로 된 메시지를 publish해야 하기 때문에 아래의 구문을 추가한다.
+              import std_msgs.msg import UInt16
+          2.	각도를 입력 받기 위해 input 함수를 사용한다.
