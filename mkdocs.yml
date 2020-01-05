@@ -1,6 +1,2 @@
 site_name: Tello Tutorials
 
-pages:
-  - HOME : index.md
-  - Tello : Tello_Manual.md
-  - Python : Python_Class_Manal.md
