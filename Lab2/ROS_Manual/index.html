@@ -340,11 +340,10 @@ $ wget https://raw.github.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/00
 <p>servo노드가 50이라는 메시지를 받으면 서보모터가 50도에 맞춰 돌아가게 된다.
 0~180도의 각도를 임의로 설정하여 발행(Publish) 해보자.</p>
 <p>이번에는 talker.py 를 수정하여 servo라는 토픽으로 각도 정보를 발행(Publish)해보자.</p>
-<pre><code>    Hint
-      1.    정수로 된 메시지를 publish해야 하기 때문에 아래의 구문을 추가한다.
-          import std_msgs.msg import UInt16
-      2.    각도를 입력 받기 위해 input 함수를 사용한다.
-</code></pre>
+<p>Hint
+      1. 정수로 된 메시지를 publish해야 하기 때문에 아래의 구문을 추가한다.
+              import std_msgs.msg import UInt16
+      2. 각도를 입력 받기 위해 input 함수를 사용한다.</p>
 <p>파일을 작성한 후, catkin_ws 폴더로 나가서 catkin_make를 실행한다.</p>
 <pre><code>  $ catkin_make
   $ source devel/setup.bash
