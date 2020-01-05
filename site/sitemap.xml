@@ -12,6 +12,16 @@
     
         
     <url>
+     <loc>/Lab1/Linux_Manual/</loc>
+     <lastmod>2020-01-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
      <loc>/Lab2/ROS_Manual/</loc>
      <lastmod>2020-01-05</lastmod>
      <changefreq>daily</changefreq>

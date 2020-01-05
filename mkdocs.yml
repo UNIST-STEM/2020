@@ -1,9 +1,10 @@
-site_name: Tello Tutorials
+site_name: UNIST STEM-CAMP Website
 theme: readthedocs
 
 page:
   - Home: index.md
   - Lab1:
+    - Linux_Manual : 'Lab1/Linux_Manual.md'
   - Lab2:
     - ROS_Manual : 'Lab2/ROS_Manual.md'
   - Lab3:

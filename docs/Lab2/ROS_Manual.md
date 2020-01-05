@@ -37,7 +37,7 @@ Catkin_ws 폴더로 다시 이동한 후 catkin_make를 실행한다.
 
     $ cd ..
     $ catkin_make
-    $ source devel/setup.bash
+    $ echo "source devel/setup.bash" >> ~/.bashrc
 
 ## 5. 노드(Node), 토픽(Topic)에 대한 이해 (Turtlesim)
 
@@ -47,9 +47,11 @@ Catkin_ws 폴더로 다시 이동한 후 catkin_make를 실행한다.
 
 ![ROS_basic_concepts](img/ROS_basic_concepts.png)
 
-### 노드 예시
+
+### 완성된 프로그램의 노드, 토픽, 메세지
 
 ![racecar_node](img/racecar_node.png)
+
 
 아래의 실습을 통해서 ROS에서의 통신을 이해해보자.
 
@@ -108,7 +110,7 @@ Talker.py 파일을 만든다.
 
     $ wget https://raw.github.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/001_talker_listener/talker.py
 
-파일을 활성화시킨 후, Vi 에디터로 코드를 확인해볼 수 있다.
+파일을 실행모드로 변경시킨 후, Vi 에디터로 코드를 확인해볼 수 있다.
 
     $ chmod +x talker.py
     $ vi talker.py
@@ -116,12 +118,14 @@ Talker.py 파일을 만든다.
         1 #!/usr/bin/env python
 
 파이썬 환경에서 실행한다는 의미로 모든 ROS 노드는 위 코드를 가장 위에 선언해 둔다.
+
 01- line > 스크립트가 실행가능한지를 확인한다.
 
         2 import rospy
         3 from std_msgs.msg import String
 
 02 - line > python으로 ROS 노드를 작성할 때는 rospy는 사용해야 한다.
+
 03 - line > std_msgs/String 메세지 타입을 발행(Publish)할 수 있도록 한다.
 
         4 def talker():
@@ -130,6 +134,7 @@ Talker.py 파일을 만든다.
         7     rate = rospy.Rate(10)
 
 05 - line > String 메세지 타입을 사용하는 chatter 토픽에게 발행(Publish)한다는 것을 선언한다.
+
 06 - line > rospy.init_node(NAME)은 rospy에게 노드의 이름을 알려주는 것이다. rospy가 이 정보를 얻기 전까지는 ROS Master와 통신이 시작되지 않는다. 'anonymous = True' 는 rospy.init_node()의 이름으로 사용되는 인수가 다른 이름과 겹치지 않고 유일해야 하는데 이를 해제시키는 역할을 한다. 즉, 복수의 talker.py 노드를 실행할 수 있게 만든다.
 
         8     while not rospy.is_shutdown():
@@ -139,9 +144,13 @@ Talker.py 파일을 만든다.
         12          rate.sleep()
 
 08 - line > rospy.is_shutdown()를 확인하면서 루프를 돌리게 된다. 즉, 사용자가 Ctrl + c를 눌러 작동을 멈추기 전까지는 계속 루프를 돌린다는 의미이다.
+
 09 - line > 지정된 string 구문에 시간 정보를 붙여서 hello_str 이라는 변수에 저장한다.
+
 10 - line > 이 코드는 세가지를 실행한다. 첫째, 화면에 프린트를 한다. 둘째, 노드의 로그 파일에 기록한다. 셋째, rosout에 기록한다. rosout에 기록된 내용으로 디버깅이 유용해진다.
+
 11 - line > 이전에 선언된 pub에 hello_str 변수에 해당되는 텍스트를 발행(Publish)하게 된다.
+
 12 - line > 지정된 시간만큼 딜레이시키는 역할을 한다.
 
         13 if __name__ == '__main__':
@@ -160,7 +169,7 @@ Listener.py 파일을 받는다.
     $ roscd beginner_tutorials/scripts/
     $ wget https://raw.github.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/001_talker_listener/listener.py
 
-파일을 활성화시킨 후, Vi 에디터로 코드를 확인한다.
+파일을 실행모드로 변경시킨 후, Vi 에디터로 코드를 확인한다.
 
     $ chmod +x listener.py
 
@@ -178,6 +187,7 @@ Listener.py 파일을 받는다.
           10 if __name__ == '__main__' : listener()
 
 8 - line > 사용자의 노드가 std.msgs.msgs.String 의 형태의 타입의 메세지를 chatter 토픽으로부터 구독한다는 선언이다. 새로운 메세지를 수신했을 때, callback은 그 메세지를 첫번째 변수로 불러오게 된다.
+
 9 - line > 사용자의 노드가 종료되기 전까지 python이 종료되는 것을 막는다.
 
 Catkin_ws 폴더로 나가서 catkin_make를 실행한다.

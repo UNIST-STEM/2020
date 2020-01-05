@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Color Segmentation and openCV - Tello Tutorials</title>
+  <title>Color Segmentation and openCV - UNIST STEM-CAMP Website</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -35,7 +35,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="../.." class="icon icon-home"> Tello Tutorials</a>
+        <a href="../.." class="icon icon-home"> UNIST STEM-CAMP Website</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -50,6 +50,17 @@
             <li class="toctree-l1">
 		
     <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab1</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../Lab1/Linux_Manual/">Linux Manual</a>
+                </li>
+    </ul>
 	    </li>
           
             <li class="toctree-l1">
@@ -94,7 +105,7 @@
     <a class="current" href="./">Color Segmentation and openCV</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#color-segmentation-and-oepncv">Color Segmentation and oepnCV</a></li>
+    <li class="toctree-l3"><a href="#color-segmentation-and-opencv">Color Segmentation and openCV</a></li>
     
         <ul>
         
@@ -128,7 +139,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">Tello Tutorials</a>
+        <a href="../..">UNIST STEM-CAMP Website</a>
       </nav>
 
       
@@ -154,11 +165,11 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="color-segmentation-and-oepncv">Color Segmentation and oepnCV</h1>
-<p>색 공간은 일반적으로 이미지를 인코딩하는 데 사용되는 색의 조직이다. 대부분의 사람들이 들어본 가장 흔한 색 공간은 RGB 색 공간이다. </p>
+                <h1 id="color-segmentation-and-opencv">Color Segmentation and openCV</h1>
+<p>색 공간은 일반적으로 이미지를 인코딩하는 데 사용되는 색의 조직이다. 대부분의 사람들이 들어본 가장 흔한 색 공간은 RGB 색 공간이다.</p>
 <p>다른 것들은 CMYK와 YIQ 모델을 포함하지만, 로봇 공학을 위한 일반적인 색 공간은 HSV 색 공간이다.</p>
 <p>HSV는 색상(Hue), 채도(Saturation), 그리고 명도(Value)를 의미한다. 위에서 언급했듯이 통상적으로 로봇공학에는 HSV필터가 많이 쓰이기 때문에 이번 Lab에서도 마찬가지로 사용할 예정이다.</p>
-<p>다음 사진은, HSV의 분포를 나타내는 모형이다. </p>
+<p>다음 사진은, HSV의 분포를 나타내는 모형이다.</p>
 <p><img alt="HSV" src="../img/HSV.png" /></p>
 <p>어떤 특정 색의 HSV 값을 알고 싶다면, 인터넷에 검색하면 나온다.</p>
 <h2 id="goal">Goal:</h2>
@@ -169,8 +180,8 @@
 <h2 id="part-0-setup">Part 0: Setup</h2>
 <p><code>이 링크</code>에서 필요한 파일을 다운로드할 수 있다. 주로 <code>slider_colorsegmentation.py</code>, <code>driveNode.py</code>와 함께 작업하게 될 것이다.
  자동차에 있는 <code>Jetson Nano</code>에서 다음 코드가 잘 작동되는지 확인해보자.</p>
-<pre><code>python 
-import cv2 
+<pre><code>python
+import cv2
 cv2.__version__
 </code></pre>
 <p>위의 파일을 <code>raccar_ws/src</code> 내의 스크립트 폴더에 넣으십시오.</p>
@@ -178,11 +189,11 @@ cv2.__version__
 <p>우선 <code>slider_colorsegmentation.py</code> 를 실행하면, 총 두개의 창이 뜨게 된다.
  하나는 HSV 필터 설정을 할 수 있는 창이고, 다른 하나는 HSV 필터가 적용되어 카메라의 현재 촬영중인 이미지를 흑백으로 표현하는 창이다.  </p>
 <p>위에서 설명했던 HSV필터가 적용되면 특정 색상, 채도, 명도 범위에 포함되는 색만을 흰색으로 표현 해준다. 반대로, 포함되지 않는 색은 검은색으로 표현된다.</p>
-<p><code>slider_colorsegmentation.py</code> 를 실행하면, HSV 필터를 설정할 수 있는 창이 뜨게 된다. 
- 각각의 색상, 채도, 명도의 low와 high를 이용해 제공된 주황색 테이프를 잘 인식할 수 있도록 설정해라. (설정된 HSV 필터는 테이프의 영역만을 흰색으로 표현해야 한다.) </p>
+<p><code>slider_colorsegmentation.py</code> 를 실행하면, HSV 필터를 설정할 수 있는 창이 뜨게 된다.
+ 각각의 색상, 채도, 명도의 low와 high를 이용해 제공된 주황색 테이프를 잘 인식할 수 있도록 설정해라. (설정된 HSV 필터는 테이프의 영역만을 흰색으로 표현해야 한다.)</p>
 <h2 id="part-2-color-segmentation-detection">part 2 : Color Segmentation을 이용한 개체 감지(detection)</h2>
 <p>여러분이 Part1에서 구한 HSV필터의 설정값은 이제 자동차가 주황색 선로만 따라 움직일 수 있도록 하는 기본 설정값 중 하나이다.</p>
-<p><code>color_segmentation</code>에 들어가면 주석으로 <code>To do</code> 라고 작성되어 있는 부분이 있다. </p>
+<p><code>color_segmentation</code>에 들어가면 주석으로 <code>To do</code> 라고 작성되어 있는 부분이 있다.</p>
 <p><img alt="color" src="../img/color.png" /></p>
 <p>아래 코드는 임의의 색을 인식할 수 있도록 하는 HSV 필터 설정이다. 아래 코드를 참고하여 여러분들이 part1에서 구했던 HSV필터 설정을 적용해보자.</p>
 <pre><code> law_range = np.array( [x1, y1, z1] )
@@ -190,11 +201,11 @@ cv2.__version__
 </code></pre>
 <p><code>color_segmentation</code> 을 잘 작성했는지 확인해 보기 위해서는 해당 파일을 저장하고 난 뒤, <code>teleop</code>을 실행해보자.
  실행하게 되면, 카메라에 어떤 물체들이 인식되는지 박스로 표현될 것이다. 이때 박스가 주황색 테이프를 잘 인식하는지, 테이프 뿐만이 아니라 다른 주황색들도 인식하는지 확인해보면 좋을 것 같다.</p>
-<p>자동차를 보면 카메라가 자동차 가장 앞쪽에 부착되어 있다. 
- 카메라는 다음 사진과 같이 바닥에 붙어있는 주황색 선만을 인식하며 자동차가 그 선을 따라갈 수 있도록 프로그래밍 되어야 한다. </p>
+<p>자동차를 보면 카메라가 자동차 가장 앞쪽에 부착되어 있다.
+ 카메라는 다음 사진과 같이 바닥에 붙어있는 주황색 선만을 인식하며 자동차가 그 선을 따라갈 수 있도록 프로그래밍 되어야 한다.</p>
 <p><img alt="road" src="../img/road.png" /></p>
-<p>정리하자면, 바닥에 주황색과 비슷한 색의 스티커가 부착되어 있다 하더라도 무시하고 달릴 수 있어야 한다는 것이다. </p>
-<p>part2에서 가장 중요한 것은 오직 테이프의 색상만을 인식하는지 확인하는 것이 중요하다. 인식 범위가 너무 넓다면, 다른 색들도 카메라가 인식하게 될 것이고, 인식 범위가 너무 좁다면 필요한 색상을 인식하지 못할 것이다. 
+<p>정리하자면, 바닥에 주황색과 비슷한 색의 스티커가 부착되어 있다 하더라도 무시하고 달릴 수 있어야 한다는 것이다.</p>
+<p>part2에서 가장 중요한 것은 오직 테이프의 색상만을 인식하는지 확인하는 것이 중요하다. 인식 범위가 너무 넓다면, 다른 색들도 카메라가 인식하게 될 것이고, 인식 범위가 너무 좁다면 필요한 색상을 인식하지 못할 것이다.
  적당한 범위로 HSV를 설정하는 것이 무엇보다 중요하다.</p>
               
             </div>
