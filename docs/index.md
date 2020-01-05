@@ -1,3 +1,5 @@
+![unist_banner](img/unist_banner.jpg)
+
 # Welcome to UNIST STEM-CAMP
 
 ![unist_image_4](img/unist_image_4.png)
