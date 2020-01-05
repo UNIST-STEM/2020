@@ -30,6 +30,7 @@ RYZE 사에서 만든 미니드론으로 핸드폰 어플리케이션과 연동�
 
 ![tello_application_image_real](img/tello_application_image_real.png)
 
+
 3.	텔로를 자유롭게 조작한다.
 
   <span style="color:red">__“주의”__</span> _드론끼리의 충돌, 드론 날개의 직접적인 충돌로 부상이 생길 수 있으니 충분한 공간을 확보한 뒤에 드론을 비행하고 조작해보도록 한다._
