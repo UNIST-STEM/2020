@@ -1,4 +1,4 @@
-# Welcome to MkDocs
+# Welcome to UNIST STEM-CAMP
 
 For full documentation visit [mkdocs.org](https://mkdocs.org).
 
