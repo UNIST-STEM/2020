@@ -226,7 +226,7 @@ ROS workstation을 설치한다.
 
 새 터미널에서 ros-serial을 실행한다.
 
-      $ rosrun rosserial_python serial_node.py _ _port=/dev/ttyACM0_
+      $ rosrun rosserial_python serial_node.py _port=/dev/ttyACM0_
 
 새 터미널을 연다.
 
@@ -243,3 +243,25 @@ servo노드가 50이라는 메시지를 받으면 서보모터가 50도에 맞�
           1.	정수로 된 메시지를 publish해야 하기 때문에 아래의 구문을 추가한다.
               import std_msgs.msg import UInt16
           2.	각도를 입력 받기 위해 input 함수를 사용한다.
+
+파일을 작성한 후, catkin_ws 폴더로 나가서 catkin_make를 실행한다.
+
+      $ catkin_make
+      $ source devel/setup.bash
+
+새 터미널에서 roscore를 실행한다.
+
+      $ roscore
+
+다른 터미널을 열어서 ros 시리얼을 실행한다.
+
+      $ rosrun rosserial_python serial_node.py _port:=.dev/ttyACM0_
+
+다른 터미널을 열어서 talker.py를 실행한다.
+
+      $ rosrun beginner_tutorials talker.py
+
+터미널 창에서 각도를 입력하면 서보모터가 움직인다.
+
+결과 예시
+![result_example](img/result_example.png)
