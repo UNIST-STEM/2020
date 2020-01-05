@@ -1,6 +1,6 @@
 # Welcome to UNIST STEM-CAMP
 
-![unist_image_4](img/unist_image_4.png)
+![unist_image](img/unist_image.png)
 
 ![unist_banner](img/unist_banner.jpg)
 
@@ -12,7 +12,7 @@
 
 ## 편의시설 안내
 
-![store_notification](img/store_notification.png)
+![store_notification](img/store_notification.PNG)
 
 ## 긴급 연락망
 
