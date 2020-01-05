@@ -1,33 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
     <url>
-     <loc>None</loc>
+     <loc>/</loc>
      <lastmod>2020-01-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
+    
+
+    
+        
     <url>
-     <loc>None</loc>
+     <loc>/Lab2/ROS_Manual/</loc>
      <lastmod>2020-01-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    
+
+    
+        
     <url>
-     <loc>None</loc>
+     <loc>/Lab3/Python_Class_Manual/</loc>
      <lastmod>2020-01-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    
+
+    
+        
     <url>
-     <loc>None</loc>
+     <loc>/Lab4/Lab4/</loc>
      <lastmod>2020-01-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    
+
+    
+        
     <url>
-     <loc>None</loc>
+     <loc>/Lab5/Color Segmentation and openCV/</loc>
      <lastmod>2020-01-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     <url>
-     <loc>None</loc>
+     <loc>/Lab5/Line Following/</loc>
      <lastmod>2020-01-05</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    
+
 </urlset>

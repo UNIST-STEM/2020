@@ -8,24 +8,23 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>ROS - Tello Tutorials</title>
+  <title>ROS Manual - Tello Tutorials</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link rel="stylesheet" href="../../css/highlight.css">
   
   <script>
     // Current page data
-    var mkdocs_page_name = "ROS";
+    var mkdocs_page_name = "ROS Manual";
     var mkdocs_page_input_path = "Lab2/ROS_Manual.md";
-    var mkdocs_page_url = null;
+    var mkdocs_page_url = "/Lab2/ROS_Manual/";
   </script>
   
-  <script src="../../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
   
 </head>
 
@@ -39,7 +38,7 @@
         <a href="../.." class="icon icon-home"> Tello Tutorials</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+    <input type="text" name="q" placeholder="Search docs" />
   </form>
 </div>
       </div>
@@ -50,7 +49,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../..">Welcome to MkDocs</a>
+    <a class="" href="../..">Home</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -59,7 +58,7 @@
     <ul class="subnav">
                 <li class=" current">
                     
-    <a class="current" href="./">ROS</a>
+    <a class="current" href="./">ROS Manual</a>
     <ul class="subnav">
             
     <li class="toctree-l3"><a href="#ros">ROS</a></li>
@@ -92,7 +91,7 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../Lab3/Python_Class_Manual/">파이썬(PYTHON)</a>
+    <a class="" href="../../Lab3/Python_Class_Manual/">Python Class Manual</a>
                 </li>
     </ul>
 	    </li>
@@ -103,7 +102,7 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../Lab4/Lab4/">TELLO</a>
+    <a class="" href="../../Lab4/Lab4/">Lab4</a>
                 </li>
     </ul>
 	    </li>
@@ -114,7 +113,7 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../Lab5/Color Segmentation and openCV/">Color Segmentation and oepnCV</a>
+    <a class="" href="../../Lab5/Color Segmentation and openCV/">Color Segmentation and openCV</a>
                 </li>
                 <li class="">
                     
@@ -149,7 +148,7 @@
         
       
     
-    <li>ROS</li>
+    <li>ROS Manual</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -331,7 +330,7 @@ $ wget https://raw.github.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/00
 <pre><code>  $ roscore
 </code></pre>
 <p>새 터미널에서 ros-serial을 실행한다.</p>
-<pre><code>  $ rosrun rosserial_python serial_node.py _port=/dev/ttyACM0_
+<pre><code>  $ rosrun rosserial_python serial_node.py \_port=/dev/ttyACM0
 </code></pre>
 <p>새 터미널을 연다.</p>
 <pre><code>  $ rostopic pub /servo std_msgs/UInt16 50 --once
@@ -353,7 +352,7 @@ $ wget https://raw.github.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/00
 <pre><code>  $ roscore
 </code></pre>
 <p>다른 터미널을 열어서 ros 시리얼을 실행한다.</p>
-<pre><code>  $ rosrun rosserial_python serial_node.py _port:=.dev/ttyACM0_
+<pre><code>  $ rosrun rosserial_python serial_node.py \_port:=.dev/ttyACM0
 </code></pre>
 <p>다른 터미널을 열어서 talker.py를 실행한다.</p>
 <pre><code>  $ rosrun beginner_tutorials talker.py
@@ -368,10 +367,10 @@ $ wget https://raw.github.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/00
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../Lab3/Python_Class_Manual/" class="btn btn-neutral float-right" title="파이썬(PYTHON)">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../Lab3/Python_Class_Manual/" class="btn btn-neutral float-right" title="Python Class Manual">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../.." class="btn btn-neutral" title="Welcome to MkDocs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../.." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -385,12 +384,12 @@ $ wget https://raw.github.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/00
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
+	  
         </div>
       </div>
 
     </section>
-
+    
   </div>
 
   <div class="rst-versions" role="note" style="cursor: pointer">
@@ -404,9 +403,7 @@ $ wget https://raw.github.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/00
       
     </span>
 </div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme.js" defer></script>
-      <script src="../../search/main.js" defer></script>
+    <script src="../../js/theme.js"></script>
 
 </body>
 </html>
