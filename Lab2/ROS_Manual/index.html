@@ -160,7 +160,8 @@
               
                 <h1 id="ros">ROS</h1>
 <h2 id="1-rosrobot-operating-system">1. ROS(Robot Operating System)란?</h2>
-<p>ROS(Robot Operating System)는 오픈 소스이며 로봇 소프트웨어를 개발하기 위한 메타 OS이다.</p>
+<p>ROS(Robot Operating System)는 오픈 소스이며 로봇 소프트웨어를 개발하기 위한 메타 OS이다.
+ROS를 이용하는</p>
 <h2 id="2-ros">2. 왜 ROS를 사용하는가?</h2>
 <p>노드 간 메세지 교환을 통해 통신하기 때문에 복잡한 프로그램을 잘게 나눠 공동 개발이 가능하다. 또한, 명령어 도구,시각화 도구(Rviz), GUI 도구 모음(rqt), 3차원 시뮬레이터(Gazebo)등 여러가지 도구를 지원한다.</p>
 <pre><code>'Rviz' - 3D 시각화, 레이저, 카메라 등의 센서 데이터를 시각화, 로봇 외형과  계획된 동작을 표현
@@ -192,6 +193,8 @@ $ source devel/setup.bash
 토픽(TOPIC) - 노드에서 노드간에 주고 받는 메세지에 특정 주제를 발행(Publish)하여서 메세지를 발송할 수 있다. 이 특정 주제에 관심이 있는(주제와 관련된 메세지를 받아야 하는) 노드는 이 주제에 대한 구독(Subscribe)할 수 있다.<br />
 메세지(Message) - 노드간에 주고 받는 데이터 형식이며, 특정 유형의 데이터 타입으로 구성된다.</p>
 <p><img alt="ROS_basic_concepts" src="../img/ROS_basic_concepts.png" /></p>
+<h3 id="_1">노드 예시</h3>
+<p><img alt="racecar_node" src="../img/racecar_node.png" /></p>
 <p>아래의 실습을 통해서 ROS에서의 통신을 이해해보자.</p>
 <pre><code>$ sudo apt-get install ros-melodic-ros-tutorials
 $ roscore
