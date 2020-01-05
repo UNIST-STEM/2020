@@ -330,7 +330,7 @@ $ wget https://raw.github.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/00
 <pre><code>  $ roscore
 </code></pre>
 <p>새 터미널에서 ros-serial을 실행한다.</p>
-<pre><code>  $ rosrun rosserial_python serial_node.py \_port=/dev/ttyACM0
+<pre><code>  $ rosrun rosserial_python serial_node.py _port=/dev/ttyACM0
 </code></pre>
 <p>새 터미널을 연다.</p>
 <pre><code>  $ rostopic pub /servo std_msgs/UInt16 50 --once
@@ -352,7 +352,7 @@ $ wget https://raw.github.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/00
 <pre><code>  $ roscore
 </code></pre>
 <p>다른 터미널을 열어서 ros 시리얼을 실행한다.</p>
-<pre><code>  $ rosrun rosserial_python serial_node.py \_port:=.dev/ttyACM0
+<pre><code>  $ rosrun rosserial_python serial_node.py _port:=.dev/ttyACM0
 </code></pre>
 <p>다른 터미널을 열어서 talker.py를 실행한다.</p>
 <pre><code>  $ rosrun beginner_tutorials talker.py
