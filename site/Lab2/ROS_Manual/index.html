@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>ROS - Tello Tutorials</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "ROS";
+    var mkdocs_page_input_path = "Lab2\\ROS_Manual.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> Tello Tutorials</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Welcome to MkDocs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab2</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">ROS</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#ros">ROS</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#1-rosrobot-operating-system">1. ROS(Robot Operating System)란?</a></li>
+        
+            <li><a class="toctree-l4" href="#2-ros">2. 왜 ROS를 사용하는가?</a></li>
+        
+            <li><a class="toctree-l4" href="#3-workspace">3. Workspace 만들기</a></li>
+        
+            <li><a class="toctree-l4" href="#4-package">4. Package 만들기</a></li>
+        
+            <li><a class="toctree-l4" href="#5-node-topic-turtlesim">5. 노드(Node), 토픽(Topic)에 대한 이해 (Turtlesim)</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab3</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../Lab3/Python_Class_Manual/">파이썬(PYTHON)</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab4</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../Lab4/Lab4/">TELLO</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab5</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../Lab5/Color Segmentation and openCV/">Color Segmentation and oepnCV</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../Lab5/Line Following/">Line Following</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">Tello Tutorials</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Lab2 &raquo;</li>
+        
+      
+    
+    <li>ROS</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="ros">ROS</h1>
+<h2 id="1-rosrobot-operating-system">1. ROS(Robot Operating System)란?</h2>
+<p>ROS(Robot Operating System)는 오픈 소스이며 로봇 소프트웨어를 개발하기 위한 메타 OS이다.</p>
+<h2 id="2-ros">2. 왜 ROS를 사용하는가?</h2>
+<p>노드 간 메세지 교환을 통해 통신하기 때문에 복잡한 프로그램을 잘게 나눠 공동 개발이 가능하다. 또한, 명령어 도구,시각화 도구(Rviz), GUI 도구 모음(rqt), 3차원 시뮬레이터(Gazebo)등 여러가지 도구를 지원한다.</p>
+<pre><code>'Rviz' - 3D 시각화, 레이저, 카메라 등의 센서 데이터를 시각화, 로봇 외형과  계획된 동작을 표현
+'rqt' - Qt기반 프레임 워크 제공
+'Gazebo' - 물리 엔진을 탑재, 로봇 센서, 환경 모델 등을 지원, 3차원 시뮬레이터
+</code></pre>
+<p>로봇 프로그래밍에서 많이 사용되는 모델링, 센싱, 인식, 내비게이션, 조작(Manipulation) 기능을 제공한다.</p>
+<h2 id="3-workspace">3. Workspace 만들기</h2>
+<pre><code>$ mkdir -p ~/catkin_ws/src
+$ cd ~/catkin_ws
+$ catkin_make
+</code></pre>
+<p>catkin_make로 빌드가 완료되면, src 외에 build와 devel 폴더가 자동으로 생성된다.
+build 폴더에는 catkin build의 빌드 관련 파일이 저장되고 devel 에는 빌드 후의 실행관련 파일이 저장된다.
+src 폴더에는 빌드 관련 파일인 CMakelist.txt 가 생성된다.</p>
+<h2 id="4-package">4. Package 만들기</h2>
+<p>Package: ROS 를 구성하는 기본 단위. 패키지는 하나 이상의 노드를 포함하거나 다른 패키지의 노드를 실행하기 위한 설정 파일 등을 포함하고 있다.
+src 폴더에서 tutorial package를 생성한다.</p>
+<pre><code>$ cd src
+$ catkin_create_pkg beginner_tutorials std_msgs rospy roscpp
+</code></pre>
+<p>Catkin_ws 폴더로 다시 이동한 후 catkin_make를 실행한다.</p>
+<pre><code>$ cd ..
+$ catkin_make
+$ source devel/setup.bash
+</code></pre>
+<h2 id="5-node-topic-turtlesim">5. 노드(Node), 토픽(Topic)에 대한 이해 (Turtlesim)</h2>
+<p>노드(NODE) - 노드는 계산을 수행하는 프로세스다. 각각의 노드는 개별적인 작업을 수행하고 있고, 노드와 노드는 서로간의 메세지 통신을 통해서 데이터와 명령을 주고받는다.
+토픽(TOPIC) - 노드에서 노드간에 주고 받는 메세지에 특정 주제를 게시(Publish)하여서 메세지를 발송할 수 있다. 이 특정 주제에 관심이 있는(주제와 관련된 메세지를 받아야 하는) 노드는 이 주제에 대한 구독(Subscribe)할 수 있다.<br />
+메세지(Message) - 노드간에 주고 받는 데이터 형식이며, 특정 유형의 데이터 타입으로 구성된다.</p>
+<p><img alt="ROS_basic_concepts" src="../img/ROS_basic_concepts.png" /></p>
+<p>아래의 실습을 통해서 ROS에서의 통신을 이해해보자.</p>
+<pre><code>$ sudo apt-get install ros-melodic-ros-tutorials
+$ roscore
+</code></pre>
+<p>새로운 터미널을 열고, 활성화된 노드 리스트를 보여준다.
+Roscore를 실행해주었기 때문에, /rosout 노드를 확인할 수 있다.</p>
+<pre><code>$ rosnode list
+</code></pre>
+<p>Turtlesim 패키지의 turtlesim node를 실행한다.</p>
+<pre><code>$ rosrun turtlesim turtlesim_node
+</code></pre>
+<p><img alt="turtlesim_node" src="img/turtlesim_node.png" /></p>
+<p>새로운 터미널을 연다.</p>
+<pre><code>$ rosnode list
+</code></pre>
+<p>노드 리스트를 확인해보면, turtlesim 노드가 추가된 것을 볼 수 있다.
+Turtle_teleop_key 노드를 실행시킨다.</p>
+<pre><code>$rosrun turtlesim turtle_teleop_key
+</code></pre>
+<p>방향키를 누르면 거북이를 움직일 수 있다.
+새로운 터미널을 열고 노드 리스트를 확인해보면 /teleop_turtle 노드가 추가된 것을 볼 수 있다.
+현재 활성화된 노드와 주고받는 토픽을 확인할 수 있는 모식도가 그려진 창을 뜬다.</p>
+<pre><code>$rqt_graph
+</code></pre>
+<p>/teleop_turtle 노드가 /turtle1/cmd_vel 이라는 토픽을 게시(Publish)하고, /turtlesim 노드가 이를 구독(Subscribe)하는 것을 볼 수 있다.</p>
+<pre><code>$rostopic echo /turtle1/cmd_vel
+</code></pre>
+<p>/turtle1/cmd_vel 에서 전달되는 메시지를 확인할 수 있는데 어떤 방향키를 누르는지에 따라 주제(Topic)의 메시지가 바뀌는 것을 확인할 수 있다.</p>
+<p>다시 rqt 창으로 돌아가 refresh버튼을 누르면 /turtle1/cmd_vel를 구독(subscribe)하는 노드가 하나 더 생긴 것을 확인할 수 있다. 이를 통해 토픽이 일대일 형식이 아니라 여러 노드 사이에서 전달될 수 있음을 확인할 수 있다.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../Lab3/Python_Class_Manual/" class="btn btn-neutral float-right" title="파이썬(PYTHON)">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../.." class="btn btn-neutral" title="Welcome to MkDocs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../.." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../Lab3/Python_Class_Manual/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
