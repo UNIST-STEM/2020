@@ -2,26 +2,7 @@
 
 ![unist_image_4](img/unist_image_4.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![blank](img/blank.png)
 
 ## 캠퍼스 약도
 
