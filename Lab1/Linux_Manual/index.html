@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Linux Manual - UNIST STEM-CAMP Website</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Linux Manual";
+    var mkdocs_page_input_path = "Lab1/Linux_Manual.md";
+    var mkdocs_page_url = "/Lab1/Linux_Manual/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> UNIST STEM-CAMP Website</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab1</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">Linux Manual</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#linux">리눅스(Linux)</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#1-linux">1. 리눅스(Linux)란?</a></li>
+        
+            <li><a class="toctree-l4" href="#2-linux">2. 왜 리눅스(Linux)를 사용하는가?</a></li>
+        
+            <li><a class="toctree-l4" href="#3-linux">3. 리눅스(Linux) 명령어</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab2</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../Lab2/ROS_Manual/">ROS Manual</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab3</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../Lab3/Python_Class_Manual/">Python Class Manual</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab4</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../Lab4/Lab4/">Lab4</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Lab5</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../Lab5/Color Segmentation and openCV/">Color Segmentation and openCV</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../Lab5/Line Following/">Line Following</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">UNIST STEM-CAMP Website</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Lab1 &raquo;</li>
+        
+      
+    
+    <li>Linux Manual</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="linux">리눅스(Linux)</h1>
+<h2 id="1-linux">1. 리눅스(Linux)란?</h2>
+<p>리눅스(Linux)는 Windows, Mac OS와 같은 운영체제 중 하나이다. 리눅스에는 여러 배포판이 존재하고 있으며, 오늘은 그 리눅스의 배포판 중 하나인 Ubuntu를 사용해 볼 것이다.</p>
+<h2 id="2-linux">2. 왜 리눅스(Linux)를 사용하는가?</h2>
+<p>리눅스(Linux)는 대표적인 오픈소스(open source) 운영체제이다. 즉, 이를 수정하여서 개인 또는 기업이 사용할 수 있다는 것이다. 따라서 보안성, 속도나 성능 등 필요한 기능을 개인에 맞춰 수정할 수 있기 때문에 자율성이 높다는 장점이 있다. IT 계열에서는 이 리눅스(Linux) 운영체제를 공부하고 사용하는 것이 필수적이라고 할 수 있다. STEM CAMP를 통해서 이 리눅스(Linux) 환경에서 여러가지 코드를 작성하고 파일을 다뤄볼 예정이니 후에 나오는 리눅스 명령어에 익숙해지도록 하자.</p>
+<h2 id="3-linux">3. 리눅스(Linux) 명령어</h2>
+<h3 id="_1">리눅스 기본 명령어</h3>
+<table>
+<thead>
+<tr>
+<th>명령어</th>
+<th>기능</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sudo '명령어'</td>
+<td>관리자 권한으로 명령어 실행</td>
+</tr>
+<tr>
+<td>pwd</td>
+<td>현재 위치하는 디렉토리(폴더)</td>
+</tr>
+<tr>
+<td>mkdir</td>
+<td>디렉토리(폴더) 생성</td>
+</tr>
+<tr>
+<td>rmdir / rm -r</td>
+<td>디렉토리(폴더) 삭제</td>
+</tr>
+<tr>
+<td>cd</td>
+<td>디렉토리(폴더) 이동</td>
+</tr>
+<tr>
+<td>ls</td>
+<td>현재 디렉토리(폴더) 내에 존재하는 파일 및 디렉토리(폴더)들을 표시</td>
+</tr>
+<tr>
+<td>cp</td>
+<td>파일 복사</td>
+</tr>
+<tr>
+<td>cp -r</td>
+<td>디렉토리(폴더) 내부까지 복사하기 위한 복사 옵션</td>
+</tr>
+<tr>
+<td>mv</td>
+<td>파일 이동</td>
+</tr>
+<tr>
+<td>rm</td>
+<td>파일 삭제</td>
+</tr>
+<tr>
+<td>chmod +x</td>
+<td>대상 파일의 실행 권한을 추가</td>
+</tr>
+<tr>
+<td>vi</td>
+<td>vi 에디터로 파일 열기</td>
+</tr>
+</tbody>
+</table>
+<h3 id="vi">vi 에디터 명령어</h3>
+<p>vi 에디터 내부에서 사용할 수 있는 명령어로써, 처음 파일로 들어갔을 때 혹은 파일을 입력하는 도중 'esc' 키를 누른 뒤에 명령어를 입력할 수 있다.</p>
+<p><img alt="vi_editor_diagram" src="../img/vi_editor_diagram.png" /></p>
+<table>
+<thead>
+<tr>
+<th>vi 에디터 명령어</th>
+<th>기능</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>i</td>
+<td>현재 커서 위치에서 입력모드로 변경</td>
+</tr>
+<tr>
+<td>gg</td>
+<td>문서 맨 앞으로 이동</td>
+</tr>
+<tr>
+<td>G</td>
+<td>문서 맨 끝으로 이동</td>
+</tr>
+<tr>
+<td>0</td>
+<td>라인 맨 앞으로 이동</td>
+</tr>
+<tr>
+<td>$</td>
+<td>라인 맨 뒤로 이동</td>
+</tr>
+<tr>
+<td>/'단어'</td>
+<td>문서에서 단어 찾기</td>
+</tr>
+<tr>
+<td></td>
+<td>n이나 N으로 다음/이전 찾기</td>
+</tr>
+<tr>
+<td>dd</td>
+<td>현재 줄 잘라내기</td>
+</tr>
+<tr>
+<td>dw</td>
+<td>현재 단어 잘라내기</td>
+</tr>
+<tr>
+<td>yy</td>
+<td>현재 줄 복사하기</td>
+</tr>
+<tr>
+<td>p</td>
+<td>붙여넣기</td>
+</tr>
+<tr>
+<td>u</td>
+<td>되돌리기(Undo)</td>
+</tr>
+<tr>
+<td>Ctrl + r</td>
+<td>다시하기(Redo)</td>
+</tr>
+<tr>
+<td>:w</td>
+<td>문서 저장하기</td>
+</tr>
+<tr>
+<td>:q</td>
+<td>현재 문서 닫기</td>
+</tr>
+<tr>
+<td>:q!</td>
+<td>현재 문서 저장하지 않고 닫기</td>
+</tr>
+<tr>
+<td>:wq</td>
+<td>저장하고 닫기</td>
+</tr>
+<tr>
+<td>:se nu</td>
+<td>라인 숫자 표시하기</td>
+</tr>
+<tr>
+<td>:'숫자'</td>
+<td>지정한 라인수로 이동</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-linux">4. 리눅스(Linux) 명령어 연습해보기</h3>
+<p>리눅스(Linux) 명령어를 한번씩 사용해보고 익숙해지도록 연습하기</p>
+<p>Vi 에디터를 이용하여서 파일을 만들고, vi 명령어를 사용해보기</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../../Lab2/ROS_Manual/" class="btn btn-neutral float-right" title="ROS Manual">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../.." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+    
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../.." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../../Lab2/ROS_Manual/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script src="../../js/theme.js"></script>
+
+</body>
+</html>
