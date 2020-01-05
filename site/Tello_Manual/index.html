@@ -7,11 +7,11 @@
         
         
         
-        <link rel="shortcut icon" href="/img/favicon.ico">
-        <title>Tello Tutorials</title>
-        <link href="/css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="/css/font-awesome.min.css" rel="stylesheet">
-        <link href="/css/base.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>TELLO - Tello Tutorials</title>
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -19,8 +19,8 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <script src="/js/jquery-1.10.2.min.js" defer></script>
-        <script src="/js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap-3.0.3.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script> 
     </head>
@@ -39,7 +39,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/.">Tello Tutorials</a>
+                    <a class="navbar-brand" href="..">Tello Tutorials</a>
                 </div>
 
                 <!-- Expanded navigation -->
@@ -47,10 +47,10 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li >
-                                <a href="/.">Welcome to MkDocs</a>
+                                <a href="..">Welcome to MkDocs</a>
                             </li>
-                            <li >
-                                <a href="/Tello_Manual/">TELLO</a>
+                            <li class="active">
+                                <a href="./">TELLO</a>
                             </li>
                         </ul>
 
@@ -60,21 +60,163 @@
                                 <i class="fa fa-search"></i> Search
                             </a>
                         </li>
+                            <li >
+                                <a rel="next" href="..">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a rel="prev" >
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
         </div>
 
         <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#tello">TELLO</a></li>
+            <li><a href="#tello_1">TELLO란 무엇인가?</a></li>
+            <li><a href="#tello_2">TELLO 조작방법</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
 
-    <div class="row-fluid">
-      <div id="main-content" class="span12">
-        <h1 id="404-page-not-found" style="text-align: center">404</h1>
-        <p style="text-align: center"><strong>Page not found</strong></p>
-      </div>
-    </div>
-
-
+<h1 id="tello">TELLO</h1>
+<h2 id="tello_1">TELLO란 무엇인가?</h2>
+<h2 id="tello_2">TELLO 조작방법</h2>
+<h3 id="_1">어플리케이션을 이용한 조작</h3>
+<ol>
+<li>모바일 장치에서 WIFI 기능을 활성화시킨 후, TELLO-xxxxxx 네트워크를 선택한다.<br>
+  <span style="color:red"><strong>“주의”</strong></span> <em>네트워크 연결 시 다른 기기와 연결되어서 드론이 비행하여 다칠 수 있으므로 각 팀별 TELLO의 고유번호를 잘 파악하여서 연결해야 한다.</em></li>
+</ol>
+<p>[TELLO_APPLICATION_SCREEN] 사진</p>
+<ol>
+<li>텔로를 자유롭게 조작한다.<br>
+  <span style="color:red"><strong>“주의”</strong></span> <em>드론끼리의 충돌, 드론 날개의 직접적인 충돌로 부상이 생길 수 있으니 충분한 공간을 확보한 뒤에 드론을 비행하고 조작해보도록 한다.</em></li>
+</ol>
+<h3 id="_2">파이썬 코드를 이용한 조작</h3>
+<ol>
+<li>WSL – Ubuntu 18.04 – LTS를 실행한다.</li>
+<li>Dronblocks-Tello-Python 폴더를 참조하여 조작을 실행해본다.
+네트워크 연결 메시지 드론에 보내기
+드론과 노트북을 연결해서 키보드로 드론을 조작해보기</li>
+</ol>
+<p>[참고 – 드론 명령어]</p>
+<table>
+<thead>
+<tr>
+<th>명령어</th>
+<th>설명</th>
+<th>출력 예상 문구</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-command</td>
+<td>TELLO 명령어 모드</td>
+<td>ok / error</td>
+</tr>
+<tr>
+<td>-takeoff</td>
+<td>TELLO 이륙</td>
+<td>ok / error</td>
+</tr>
+<tr>
+<td>-Land</td>
+<td>TELLO 착륙</td>
+<td>ok / error</td>
+</tr>
+<tr>
+<td>-emergency</td>
+<td>비상정지</td>
+<td>ok / error</td>
+</tr>
+<tr>
+<td>-up x</td>
+<td>xcm 상승 (x: 20-500)</td>
+<td>ok / error</td>
+</tr>
+<tr>
+<td>-down x</td>
+<td>xcm 하강 (x: 20-500)</td>
+<td>ok / error</td>
+</tr>
+<tr>
+<td>-left x</td>
+<td>xcm 왼쪽으로 비행</td>
+<td>ok / error</td>
+</tr>
+<tr>
+<td>-right x</td>
+<td>xcm 오른쪽으로 비행</td>
+<td>ok / error</td>
+</tr>
+<tr>
+<td>-forward x</td>
+<td>xcm 전진</td>
+<td>ok / error</td>
+</tr>
+<tr>
+<td>-back x</td>
+<td>xcm 후진</td>
+<td>ok / error</td>
+</tr>
+<tr>
+<td>-cw x</td>
+<td>시계방향으로 x도 회전</td>
+<td>ok / error</td>
+</tr>
+<tr>
+<td></td>
+<td>(x: 1 – 3600)</td>
+<td></td>
+</tr>
+<tr>
+<td>-ccw x</td>
+<td>반시계방향으로 x도 회전</td>
+<td>ok / error</td>
+</tr>
+<tr>
+<td>-flip x</td>
+<td>x 방향으로 회전</td>
+<td>ok / error</td>
+</tr>
+<tr>
+<td></td>
+<td>(x : 4방향)</td>
+<td></td>
+</tr>
+<tr>
+<td>-speed x</td>
+<td>초속 xcm로 스피드설정</td>
+<td>ok / error</td>
+</tr>
+<tr>
+<td>-speed?</td>
+<td>현재 속도 출력</td>
+<td>x: 1-100</td>
+</tr>
+<tr>
+<td>-battery?</td>
+<td>배터리 잔량 출력</td>
+<td>x: 0-100</td>
+</tr>
+<tr>
+<td>-time?</td>
+<td>비행시간 출력</td>
+<td>시간(time)</td>
+</tr>
+<tr>
+<td>-height?</td>
+<td>높이 출력</td>
+<td>x: 0-3000</td>
+</tr>
+</tbody>
+</table></div>
         </div>
 
         <footer class="col-md-12">
@@ -82,11 +224,11 @@
             <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
         <script>
-            var base_url = "/",
+            var base_url = "..",
                 shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
         </script>
-        <script src="/js/base.js" defer></script>
-        <script src="/search/main.js" defer></script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">
