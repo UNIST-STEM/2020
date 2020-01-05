@@ -1,6 +1,6 @@
 # Welcome to UNIST STEM-CAMP
 
-![unist_image_2](img/unist_image_2.jpg)
+![unist_image_4](img/unist_image_4.jpg)
 
 ## 캠퍼스 약도
 
