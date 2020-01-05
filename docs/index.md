@@ -1,17 +1,23 @@
 # Welcome to UNIST STEM-CAMP
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
+![unist_image_2](img/unist_image_2.jpg)
 
-## Commands
+## 캠퍼스 약도
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+![unist_campus_map](img/unist_campus_map.png)
 
-## Project layout
+## 긴급 연락망
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+| 프로그램 관리자 | 연락처 |
+|----------------|-------|
+| 교수 문영제 | yjmoon@unist.ac.kr |
+| 리더십센터 신현배 | 010-9364-8044 |
+| 리더십센터 김세은 | 010-3920-3060 |
+| 전기전자컴퓨터 공학부 행정실 오창주 | 010-5524-8190 |
+| 헬스케어센터 |  052-217-4011(상담), 4012(보건) |
+| TA 신정하(생활멘토) | 010-3411-8547 |
+| TA 김중빈(생활멘토) | 010-4198-7256 |
+| TA 김태윤 | 010-5279-1628 |
+| TA 이현빈 | 010-3009-2915 |
+| TA 임가은 | 010-5055-2279 |
+| TA 임수철 | 010-4640-0176 |
