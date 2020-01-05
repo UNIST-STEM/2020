@@ -1,8 +1,19 @@
 site_name: Tello Tutorials
+theme: readthedocs
 
-pages:
+page:
   - Home: index.md
+  - Lab1:
+  - Lab2:
+  - Lab3:
+    - Python_Class_Manual : 'Lab3/Python_Class_Manual.md'
+  - Lab4:
+    - Tello_Manual : 'Lab4/Lab4.md'
+  - Lab5:
+    - Color Segmentation : 'Lab5/Color Segmentation.md'
+    - Line Following : 'Lab5/Line Follwoing.md'
+  - Lab6: 
   - Tello_Manual: Tello_Manual.md
   - Python_Class: Python_Class_Manual.md
 
-theme: readthedocs
+
