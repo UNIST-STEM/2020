@@ -1,8 +1,8 @@
 site_name: Tello Tutorials
 
-pages: 
-  - 홈: index.md
-  - 사용법: Tello_Manual.md
-  - 세부사용법: Python_Class_Manual.md
+pages:
+  - Home: index.md
+  - Tello_Manual: Tello_Manual.md
+  - Python_Class: Python_Class_Manual.md
 
 theme: readthedocs
