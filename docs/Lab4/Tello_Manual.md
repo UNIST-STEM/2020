@@ -17,29 +17,59 @@ RYZE 사에서 만든 미니드론으로 핸드폰 어플리케이션과 연동�
 ![Tello_application_not_linked](img/Tello_application_not_linked.png)
 
 
-1.	모바일 장치에서 WIFI 기능을 활성화시킨 후, TELLO-xxxxxx 네트워크를 선택한다.
+1.모바일 장치에서 WIFI 기능을 활성화시킨 후, TELLO-xxxxxx 네트워크를 선택한다.
 
   <span style="color:red">__“주의”__</span> 네트워크 연결 시 다른 기기와 연결되어서 드론이 비행하여 다칠 수 있으므로 각 팀별 TELLO의 고유번호를 잘 파악하여서 연결해야 한다.
 
 
-2.  텔로 어플리케이션을 실행하고 텔로를 활성화시킨다.
+2.텔로(TELLO) 어플리케이션을 실행하고 텔로를 활성화시킨다.
 
 
 ![tello_application_image_real](img/tello_application_image_real.png)
 
-3.	텔로를 자유롭게 조작한다.
+3.텔로(TELLO)를 자유롭게 조작한다.
 
   <span style="color:red">__“주의”__</span> 드론끼리의 충돌, 드론 날개의 직접적인 충돌로 부상이 생길 수 있으니 충분한 공간을 확보한 뒤에 드론을 비행하고 조작해보도록 한다.
 
 ## 파이썬 코드를 이용한 조작
 
-1.	WSL – Ubuntu 18.04 – LTS를 실행한다.
-2.	Dronblocks-Tello-Python 폴더를 참조하여 조작을 실행해본다.
+1.WSL – Ubuntu 18.04 – LTS를 실행한다.
+
+2.Dronblocks-Tello-Python 폴더를 참조하여 조작을 실행해본다.
+
+<br>
+
+</br>
 
 
-네트워크 연결 메시지 드론에 보내기
+### Practice 01
 
-드론과 노트북을 연결해서 키보드로 드론을 조작해보기
+TELLO와 UDP 통신하기
+
+### Prcatice 02
+
+TELLO를 키보드로 명령어를 입력해서 장애물 통과하기
+
+### Challenge
+
+TELLO에 코드를 넣어서 자동으로 장애물 통과하기
+
+<br>
+
+</br>
+<br>
+
+</br>
+<br>
+
+</br>
+<br>
+
+</br>
+<br>
+
+</br>
+
 
 ###참고 – 드론 명령어
 
