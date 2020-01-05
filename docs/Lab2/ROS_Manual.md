@@ -3,7 +3,7 @@
 ## 1. ROS(Robot Operating System)란?
 
 ROS(Robot Operating System)는 오픈 소스이며 로봇 소프트웨어를 개발하기 위한 메타 OS이다.
-ROS를 이용하는
+ROS는 로봇 안에 있는 다양한 엑츄에이터, 센서 등 여러 가지 요소들이 쓰는 다른 언어환경을 노드라는 것으로 통합하여서 노드간의 통신을 가능하게 해준다. 이를 통해서 각각의 요소간의 통신 규약(Protocol)을 생각하지 않고 작업을 할 수 있다. ROS는 미들웨어 소프트웨어지만 OS로 불린다.
 
 ## 2. 왜 ROS를 사용하는가?
 
@@ -48,6 +48,7 @@ Catkin_ws 폴더로 다시 이동한 후 catkin_make를 실행한다.
 ![ROS_basic_concepts](img/ROS_basic_concepts.png)
 
 ### 노드 예시
+
 ![racecar_node](img/racecar_node.png)
 
 아래의 실습을 통해서 ROS에서의 통신을 이해해보자.
