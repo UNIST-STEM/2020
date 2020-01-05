@@ -1,14 +1,18 @@
-![unist_banner](img/unist_banner.jpg)
-
 # Welcome to UNIST STEM-CAMP
 
 ![unist_image_4](img/unist_image_4.png)
+
+![unist_banner](img/unist_banner.jpg)
 
 ![blank](img/blank.png)
 
 ## 캠퍼스 약도
 
 ![unist_campus_map](img/unist_campus_map.png)
+
+## 편의시설 안내
+
+![store_notification](img/store_notification.png)
 
 ## 긴급 연락망
 
