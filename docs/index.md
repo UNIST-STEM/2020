@@ -1,6 +1,6 @@
 # Welcome to UNIST STEM-CAMP
 
-![unist_image_size](img/unist_image_size_up.png)
+![unist_image_size](img/unist_image_size_up_1017.png)
 
 ![unist_banner](img/unist_banner_size_up.jpg)
 
