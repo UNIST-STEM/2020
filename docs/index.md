@@ -6,6 +6,10 @@
 
 ![blank](img/blank.png)
 
+## 캠프 일정표
+
+![camp_schedule](img/camp_schedule.PNG)
+
 ## 캠퍼스 약도
 
 ![unist_campus_map](img/unist_campus_map.png)
