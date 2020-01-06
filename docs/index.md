@@ -1,8 +1,8 @@
 # Welcome to UNIST STEM-CAMP
 
-![unist_image_size](img/unist_image_size.png)
+![unist_image_size](img/unist_image_size_up.png)
 
-![unist_banner](img/unist_banner.jpg)
+![unist_banner](img/unist_banner_size_up.jpg)
 
 
 ## 캠프 일정표
