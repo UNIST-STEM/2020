@@ -4,16 +4,16 @@ theme: readthedocs
 page:
   - Home: index.md
   - Lab1:
-    - Linux_Manual : 'Lab1/Linux_Manual.md'
+    - Linux : 'Lab1/Linux_Manual.md'
   - Lab2:
-    - ROS_Manual : 'Lab2/ROS_Manual.md'
+    - ROS : 'Lab2/ROS_Manual.md'
   - Lab3:
-    - Python_Class_Manual : 'Lab3/Python_Class_Manual.md'
+    - Python : 'Lab3/Python_Class_Manual.md'
   - Lab4:
-    - Tello_Manual : 'Lab4/Tello_Manual.md'
+    - Tello : 'Lab4/Tello_Manual.md'
   - Lab5:
     - Color Segmentation : 'Lab5/Color Segmentation.md'
     - Line Following : 'Lab5/Line Follwoing.md'
   - Lab6:
-  - Tello_Manual: Tello_Manual.md
-  - Python_Class: Python_Class_Manual.md
+  - Tello: Tello_Manual.md
+  - Python: Python_Class_Manual.md

@@ -1,10 +1,9 @@
 # Welcome to UNIST STEM-CAMP
 
-![unist_image](img/unist_image.png)
+![unist_image_size](img/unist_image_size.png)
 
 ![unist_banner](img/unist_banner.jpg)
 
-![blank](img/blank.png)
 
 ## 캠프 일정표
 
@@ -25,7 +24,7 @@
 | 교수 문영제 | yjmoon@unist.ac.kr |
 | 리더십센터 신현배 | 010-9364-8044 |
 | 리더십센터 김세은 | 010-3920-3060 |
-| 전기전자컴퓨터 공학부 행정실 오창주 | 010-5524-8190 |
+| 리더십센터 오창주 | 010-5524-8190 |
 | 헬스케어센터 |  052-217-4011(상담), 4012(보건) |
 | TA 신정하(생활멘토) | 010-3411-8547 |
 | TA 김중빈(생활멘토) | 010-4198-7256 |
