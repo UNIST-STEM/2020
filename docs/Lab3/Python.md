@@ -28,4 +28,5 @@
 ## 실습하기
 이제 우리가 배운 내용을 바탕으로 간단한 클래스를 직접 구현해보려고 한다. ‘Jupyter Notebook’은 짧은 코드를 실행하고 결과를 확인하기에 좋으므로 우리는 이것을 이용하려고 한다. 아래 링크를 통해 실습 파일을 다운로드 받으면 된다.
 
-    '주피터 노트북 코드 링크(아직 안 넣음)'
+
+https://drive.google.com/drive/folders/13o4w20s6C3KVyEfNNbzsOLnCQxPA1ljW
