@@ -80,7 +80,7 @@ TELLO에 코드를 넣어서 자동으로 장애물 통과하기
 |-Land		|	TELLO 착륙	|	ok / error|
 |-emergency	|	비상정지	|	ok / error|
 |-up x	|		xcm 상승 (x: 20-500)	|ok / error|
-|-down x |			xcm 하강 (x: 20-500)	|ok / error|
+|-down x |	xcm 하강 (x: 20-500)	|ok / error|
 |-left x		|	xcm 왼쪽으로 비행|	ok / error|
 |-right x 	|		xcm 오른쪽으로 비행|	ok / error|
 |-forward x	|	xcm 전진	|	ok / error|
