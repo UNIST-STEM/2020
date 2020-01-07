@@ -229,6 +229,7 @@ ROS workstation을 설치한다.
       line 74 : print(usage)
       line 81 : print("\nExporting to %s" % path)]
 
+다시 원래 커맨드 창으로 돌아와서 이후 명령어들을 입력해서 라이브러리를 실행해본다.
 
       $ rm -rf ros_lib
       $ rosrun rosserial_arduino make_libraries.py
