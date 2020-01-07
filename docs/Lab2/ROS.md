@@ -226,7 +226,7 @@ ROS workstation을 설치한다.
 
 /opt/ros/melodic/share/rosserial_arduino/make_libraries.py 내의 print 함수 문법을 python3 문법으로 수정해준다.
 
-      line 74 : print(usage)
+      line 74 : print(__usage__)
       line 81 : print("\nExporting to %s" % path)]
 
 다시 원래 커맨드 창으로 돌아와서 이후 명령어들을 입력해서 라이브러리를 실행해본다.
