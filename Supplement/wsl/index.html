@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>참고자료 - UNIST STEM-CAMP Website</title>
+  <title>Wsl - UNIST STEM-CAMP Website</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "\ucc38\uace0\uc790\ub8cc";
-    var mkdocs_page_input_path = "Supplement/\ucc38\uace0\uc790\ub8cc.md";
-    var mkdocs_page_url = "/Supplement/\ucc38\uace0\uc790\ub8cc/";
+    var mkdocs_page_name = "Wsl";
+    var mkdocs_page_input_path = "Supplement/wsl.md";
+    var mkdocs_page_url = "/Supplement/wsl/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -115,29 +115,27 @@
 		
     <span class="caption-text">Supplement</span>
     <ul class="subnav">
-                <li class="">
-                    
-    <a class="" href="../wsl/">Wsl</a>
-                </li>
                 <li class=" current">
                     
-    <a class="current" href="./">참고자료</a>
+    <a class="current" href="./">Wsl</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#_1">수업 자료 다운로드 링크</a></li>
+    <li class="toctree-l3"><a href="#wsl">WSL 설치 가이드</a></li>
     
         <ul>
         
-            <li><a class="toctree-l4" href="#_2">리눅스 수업자료</a></li>
+            <li><a class="toctree-l4" href="#linux-windows">Linux용 Windows 하위 시스템 설치</a></li>
         
-            <li><a class="toctree-l4" href="#ros">ROS 수업자료</a></li>
-        
-            <li><a class="toctree-l4" href="#python">PYTHON 수업자료</a></li>
+            <li><a class="toctree-l4" href="#linux">선택한 Linux 배포 설치</a></li>
         
         </ul>
     
 
     </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../참고자료/">참고자료</a>
                 </li>
     </ul>
 	    </li>
@@ -168,7 +166,7 @@
         
       
     
-    <li>참고자료</li>
+    <li>Wsl</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -178,13 +176,23 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="_1">수업 자료 다운로드 링크</h1>
-<h2 id="_2">리눅스 수업자료</h2>
-<p>'<a href="https://1drv.ms/u/s!AohfXIAoRwzimBMrCYv9jVmcvsIk?e=mA4Zry">https://1drv.ms/u/s!AohfXIAoRwzimBMrCYv9jVmcvsIk?e=mA4Zry</a>'</p>
-<h2 id="ros">ROS 수업자료</h2>
-<p>'<a href="https://1drv.ms/u/s!AohfXIAoRwzimBE7z7moR1iZa9g2?e=WIDLoM">https://1drv.ms/u/s!AohfXIAoRwzimBE7z7moR1iZa9g2?e=WIDLoM</a>'</p>
-<h2 id="python">PYTHON 수업자료</h2>
-<p>'<a href="https://1drv.ms/u/s!AohfXIAoRwzimBTFRBx_Ob6anT0j?e=fawwBM">https://1drv.ms/u/s!AohfXIAoRwzimBTFRBx_Ob6anT0j?e=fawwBM</a>'</p>
+                <h1 id="wsl">WSL 설치 가이드</h1>
+<h2 id="linux-windows">Linux용 Windows 하위 시스템 설치</h2>
+<p>1.PowerShell을 '관리자 권한으로 실행'하여서 Linux용 Windows 하위 시스템 기능을 사용한다.</p>
+<pre><code>  Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+</code></pre>
+<p>2.메세지가 표시되면 컴퓨터를 다시 시작한다.</p>
+<h2 id="linux">선택한 Linux 배포 설치</h2>
+<ul>
+<li>Microsoft Store에서 다운로드 및 설치</li>
+</ul>
+<p>1.Microsoft Store를 열고 즐겨찾는 Linux 배포를 선택합니다.</p>
+<p><a href="https://www.microsoft.com/ko-kr/p/ubuntu-1804-lts/9n9tngvndl3q?rtc=1&amp;SilentAuth=1&amp;wa=wsignin1.0&amp;activetab=pivot:overviewtab">https://www.microsoft.com/ko-kr/p/ubuntu-1804-lts/9n9tngvndl3q?rtc=1&amp;SilentAuth=1&amp;wa=wsignin1.0&amp;activetab=pivot:overviewtab</a></p>
+<p>2.배포판의 페이지에서 "가져오기"를 선택합니다.</p>
+<p>3.설치완료 후 실행해서 초기 설정을 실행합니다.</p>
+<p><img alt="ubuntu" src="../img/ubuntu.png" /></p>
+<p>4.실행한 이후 ID와 비밀번호를 설정한다. Windows와 개별적으로 존재하므로 본인의 편의상 작성하면 된다.</p>
+<p><img alt="ubuntu_first_image" src="../img/ubuntu_first_image" /></p>
               
             </div>
           </div>
@@ -192,8 +200,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="../참고자료/" class="btn btn-neutral float-right" title="참고자료">Next <span class="icon icon-circle-arrow-right"></span></a>
       
-        <a href="../wsl/" class="btn btn-neutral" title="Wsl"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+        <a href="../../Lab5/Line Following/" class="btn btn-neutral" title="Line Following"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -219,8 +229,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../wsl/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../../Lab5/Line Following/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../참고자료/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
