@@ -37,7 +37,8 @@ Catkin_ws 폴더로 다시 이동한 후 catkin_make를 실행한다.
 
     $ cd ..
     $ catkin_make
-    $ echo "source devel/setup.bash" >> ~/.bashrc
+    $ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+    $ source ~/.bashrc
 
 ## 5. 노드(Node), 토픽(Topic)에 대한 이해 (Turtlesim)
 
