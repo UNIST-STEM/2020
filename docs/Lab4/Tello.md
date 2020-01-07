@@ -47,7 +47,13 @@ Apple -  <https://apps.apple.com/kr/app/tello/id1330559633_>
 
 <https://1drv.ms/u/s!AohfXIAoRwzimBbEfqgrjcUo7jEO?e=rbSazz>
 
+
+
 1.WSL – Ubuntu 18.04 – LTS를 실행한다.
+
+
+[WSL 설치 가이드](/Supplement/WSL.md)
+
 
 2.Dronblocks-Tello-Python 폴더를 참조하여 조작을 실행해본다.
 
@@ -60,28 +66,116 @@ Apple -  <https://apps.apple.com/kr/app/tello/id1330559633_>
 
 TELLO와 UDP 통신하기
 
+          import socket
+          import time
+
+
+          tello_address = ('192.168.10.1', 8889)
+
+          sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+          sock.bind(('', 9001))
+
+          def send(message):
+            try:
+              sock.sendto(message.encode(), tello_address)
+              print("Sending message: " + message)
+            except Exception as e:
+              print("Error sending: " + str(e))
+
+          def receive():
+            try:
+              response, ip_address = sock.recvfrom(128)
+              print("Received message: " + response.decode(encoding='utf-8') + " from Tello with IP: " + str(ip_address))
+            except Exception as e:
+              print("Error receiving: " + str(e))
+
+
+          send("command")
+
+          receive()
+
+          time.sleep(3)
+
+          send("battery?")
+
+          receive()
+
+          sock.close()
+
+
+
 ### Prcatice 02
 
 TELLO를 키보드로 명령어를 입력해서 장애물 통과하기
+
+
+          import socket
+          import threading
+          import time
+          import sys
+
+          tello_address = ('192.168.10.1', 8889)
+
+          local_address = ('', 9000)
+
+          sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+          sock.bind(local_address)
+
+          def send(message):
+            # Try to send the message otherwise print the exception
+            try:
+              sock.sendto(message.encode(), tello_address)
+              print("Sending message: " + message)
+            except Exception as e:
+              print("Error sending: " + str(e))
+
+          def receive():
+            # Continuously loop and listen for incoming messages
+            while True:
+              # Try to receive the message otherwise print the exception
+              try:
+                response, ip_address = sock.recvfrom(128)
+                print("Received message: " + response.decode(encoding='utf-8'))
+              except Exception as e:
+                # If there's an error close the socket and break out of the loop
+                sock.close()
+                print("Error receiving: " + str(e))
+                break
+
+          receiveThread = threading.Thread(target=receive)
+          receiveThread.daemon = True
+          receiveThread.start()
+
+          print('Type in a Tello SDK command and press the enter key. Enter "quit" to exit this program.')
+
+          while True:
+
+            try:
+              if (sys.version_info > (3, 0)):
+                # Python 3 compatibility
+                message = input('')
+              else:
+                message = raw_input('')
+
+              if 'quit' in message:
+                print("Program exited sucessfully")
+                sock.close()
+                break
+
+              send(message)
+
+            except KeyboardInterrupt as e:
+              sock.close()
+              break
+
 
 ### Challenge
 
 TELLO에 코드를 넣어서 자동으로 장애물 통과하기
 
 <br>
-
-</br>
-<br>
-
-</br>
-<br>
-
-</br>
-<br>
-
-</br>
-<br>
-
 </br>
 
 
