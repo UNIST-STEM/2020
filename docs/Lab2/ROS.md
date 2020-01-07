@@ -265,6 +265,10 @@ ROS workstation을 설치한다.
 
       $ rosrun rosserial_python serial_node.py _port=/dev/ttyACM0
 
+위 명령어가 에러가 발생할 경우에는 아래에 적힌 명령어로 실행한다.
+
+      $ rosrun rosserial_python serial_node.py /dev/ttyACM0
+
 새 터미널을 연다.
 
       $ rostopic pub /servo std_msgs/UInt16 50 --once
