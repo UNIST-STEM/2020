@@ -225,6 +225,12 @@ ROS workstation을 설치한다.
       $ cd sketchbook/libraries
 
 /opt/ros/melodic/share/rosserial_arduino/make_libraries.py 내의 print 함수 문법을 python3 문법으로 수정해준다.
+수정하기 전에 읽기 전용 권한을 쓰기 가능한 상태로 변경해줘야 한다.
+
+      sudo chmod a+rwx /opt/ros/melodc/share/rosserial_arduino/make_libraries.py
+      vi /opt/ros/melodc/share/rosserial_arduino/make_libraries.py
+
+파일 안에서 내용을 수정해준다.
 
       line 74 : print(__usage__)
       line 81 : print("\nExporting to %s" % path)
@@ -238,6 +244,11 @@ ROS workstation을 설치한다.
 설치를 완료하고 아두이노와 서보모터를 그림과 같이 연결한다.
 
 ![arduino_motor](img/arduino_motor.png)
+
+아두이노를 실행하기 전에 serial port 의 실행 권한을 변경해준다.
+새 터미널을 연다.
+
+      $ sudo chmod a+rwx /dev/ttyACM0
 
 아두이노를 실행한다.
 
