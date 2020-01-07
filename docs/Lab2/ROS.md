@@ -213,17 +213,26 @@ listener 노드가 talker 노드에서 발행(Publish)한 메세지를 구독(Su
 
 ### 과제 - 아두이노를 ROS를 이용하여 서보모터를 돌려보자
 
-터미널을 열고 아두이노를 설치한다.
+터미널을 열고 아두이노를 설치한다. 아두이노 IDE를 실행시킨 후에 실행이 된다면 IDE 창은 종료시켜준다.
 
-      $ sudo apt-get install Arduino
+      $ sudo apt-get install arduino
+      $ arduino
 
 ROS workstation을 설치한다.
 
       $ sudo apt-get install ros-melodic-rosserial-arduino
       $ sudo apt-get install ros-melodic-rosserial
       $ cd sketchbook/libraries
+
+/opt/ros/melodic/share/rosserial_arduino/make_libraries.py 내의 print 함수 문법을 python3 문법으로 수정해준다.
+
+      line 74 : print(usage)
+      line 81 : print("\nExporting to %s" % path)]
+
+
       $ rm -rf ros_lib
       $ rosrun rosserial_arduino make_libraries.py
+      $ rosrun rosserial_arduino make_libraries.py ~/sketchbook/libraries
 
 설치를 완료하고 아두이노와 서보모터를 그림과 같이 연결한다.
 
