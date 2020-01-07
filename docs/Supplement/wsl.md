@@ -16,6 +16,8 @@
 
 <https://www.microsoft.com/ko-kr/p/ubuntu-1804-lts/9n9tngvndl3q?rtc=1&SilentAuth=1&wa=wsignin1.0&activetab=pivot:overviewtab>
 
+![ubuntustore](img/ubuntustore.png)
+
 2.배포판의 페이지에서 "가져오기"를 선택합니다.
 
 3.설치완료 후 실행해서 초기 설정을 실행합니다.
