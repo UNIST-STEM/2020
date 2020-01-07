@@ -14,6 +14,9 @@ page:
   - Lab5:
     - Color Segmentation : 'Lab5/Color Segmentation.md'
     - Line Following : 'Lab5/Line Follwoing.md'
+  - 참고자료:
+    - 참고자료 : Supplement/참고자료.md
+
   - Lab6:
   - Tello: Tello_Manual.md
   - Python: Python_Class_Manual.md
