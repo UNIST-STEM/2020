@@ -68,6 +68,12 @@
     
         
     <url>
+     <loc>/Supplement/wsl/</loc>
+     <lastmod>2020-01-07</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/Supplement/참고자료/</loc>
      <lastmod>2020-01-07</lastmod>
      <changefreq>daily</changefreq>
