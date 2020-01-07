@@ -24,4 +24,4 @@
 
 4.실행한 이후 ID와 비밀번호를 설정한다. Windows와 개별적으로 존재하므로 본인의 편의상 작성하면 된다.
 
-![ubuntu_first_image](img/ubuntu_first_image)
+![ubuntu_first_image](img/ubuntu_first_image.PNG)

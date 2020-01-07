@@ -16,6 +16,7 @@ page:
     - Line Following : 'Lab5/Line Follwoing.md'
   - 참고자료:
     - 참고자료 : Supplement/참고자료.md
+    - WSL : Supplement/WSL.md
 
   - Lab6:
   - Tello: Tello_Manual.md
