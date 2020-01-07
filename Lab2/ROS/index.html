@@ -375,6 +375,9 @@ $ wget https://raw.github.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/00
 <p>새 터미널에서 ros-serial을 실행한다.</p>
 <pre><code>  $ rosrun rosserial_python serial_node.py _port=/dev/ttyACM0
 </code></pre>
+<p>위 명령어가 에러가 발생할 경우에는 아래에 적힌 명령어로 실행한다.</p>
+<pre><code>  $ rosrun rosserial_python serial_node.py /dev/ttyACM0
+</code></pre>
 <p>새 터미널을 연다.</p>
 <pre><code>  $ rostopic pub /servo std_msgs/UInt16 50 --once
 </code></pre>
