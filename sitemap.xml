@@ -1,78 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    
     <url>
-     <loc>/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
-        
     <url>
-     <loc>/Lab1/Linux/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
-        
     <url>
-     <loc>/Lab2/ROS/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
-        
     <url>
-     <loc>/Lab3/Python/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
-        
     <url>
-     <loc>/Lab4/Tello/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
-        
     <url>
-     <loc>/Lab5/Color Segmentation and openCV/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/Lab5/Line Following/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
-        
     <url>
-     <loc>/Supplement/참고자료/</loc>
+     <loc>None</loc>
      <lastmod>2020-01-07</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
 </urlset>

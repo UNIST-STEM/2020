@@ -13,18 +13,19 @@
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/highlight.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
   
   <script>
     // Current page data
     var mkdocs_page_name = "ROS";
     var mkdocs_page_input_path = "Lab2/ROS.md";
-    var mkdocs_page_url = "/Lab2/ROS/";
+    var mkdocs_page_url = null;
   </script>
   
-  <script src="../../js/jquery-2.1.1.min.js"></script>
-  <script src="../../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
 
@@ -38,7 +39,7 @@
         <a href="../.." class="icon icon-home"> UNIST STEM-CAMP Website</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
@@ -49,7 +50,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../..">Home</a>
+    <a class="" href="../..">Welcome to UNIST STEM-CAMP</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -58,7 +59,7 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../Lab1/Linux/">Linux</a>
+    <a class="" href="../../Lab1/Linux/">리눅스(Linux)</a>
                 </li>
     </ul>
 	    </li>
@@ -102,7 +103,7 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../Lab3/Python/">Python</a>
+    <a class="" href="../../Lab3/Python/">파이썬(PYTHON)</a>
                 </li>
     </ul>
 	    </li>
@@ -113,7 +114,7 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../Lab4/Tello/">Tello</a>
+    <a class="" href="../../Lab4/Tello/">TELLO란 무엇인가?</a>
                 </li>
     </ul>
 	    </li>
@@ -139,7 +140,7 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../Supplement/참고자료/">참고자료</a>
+    <a class="" href="../../Supplement/참고자료/">수업 자료 다운로드 링크</a>
                 </li>
     </ul>
 	    </li>
@@ -208,7 +209,8 @@ $ catkin_create_pkg beginner_tutorials std_msgs rospy roscpp
 <p>Catkin_ws 폴더로 다시 이동한 후 catkin_make를 실행한다.</p>
 <pre><code>$ cd ..
 $ catkin_make
-$ echo "source devel/setup.bash" &gt;&gt; ~/.bashrc
+$ echo "source ~/catkin_ws/devel/setup.bash" &gt;&gt; ~/.bashrc
+$ source ~/.bashrc
 </code></pre>
 <h2 id="5-node-topic-turtlesim">5. 노드(Node), 토픽(Topic)에 대한 이해 (Turtlesim)</h2>
 <p>노드(NODE) - 노드는 계산을 수행하는 프로세스다. 각각의 노드는 개별적인 작업을 수행하고 있고, 노드와 노드는 서로간의 메세지 통신을 통해서 데이터와 명령을 주고받는다.
@@ -398,10 +400,10 @@ $ wget https://raw.github.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/00
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../Lab3/Python/" class="btn btn-neutral float-right" title="Python">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../Lab3/Python/" class="btn btn-neutral float-right" title="파이썬(PYTHON)">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../Lab1/Linux/" class="btn btn-neutral" title="Linux"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../Lab1/Linux/" class="btn btn-neutral" title="리눅스(Linux)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -415,12 +417,12 @@ $ wget https://raw.github.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/00
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-	  
+      
         </div>
       </div>
 
     </section>
-    
+
   </div>
 
   <div class="rst-versions" role="note" style="cursor: pointer">
@@ -434,7 +436,9 @@ $ wget https://raw.github.com/ros/ros_tutorials/kinetic-devel/rospy_tutorials/00
       
     </span>
 </div>
-    <script src="../../js/theme.js"></script>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
 
 </body>
 </html>
