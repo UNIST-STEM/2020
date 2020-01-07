@@ -8,24 +8,23 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>TELLO란 무엇인가? - UNIST STEM-CAMP Website</title>
+  <title>Tello - UNIST STEM-CAMP Website</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link rel="stylesheet" href="../../css/highlight.css">
   
   <script>
     // Current page data
-    var mkdocs_page_name = "TELLO\ub780 \ubb34\uc5c7\uc778\uac00?";
+    var mkdocs_page_name = "Tello";
     var mkdocs_page_input_path = "Lab4/Tello.md";
-    var mkdocs_page_url = null;
+    var mkdocs_page_url = "/Lab4/Tello/";
   </script>
   
-  <script src="../../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
   
 </head>
 
@@ -39,7 +38,7 @@
         <a href="../.." class="icon icon-home"> UNIST STEM-CAMP Website</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+    <input type="text" name="q" placeholder="Search docs" />
   </form>
 </div>
       </div>
@@ -50,7 +49,7 @@
           
             <li class="toctree-l1">
 		
-    <a class="" href="../..">Welcome to UNIST STEM-CAMP</a>
+    <a class="" href="../..">Home</a>
 	    </li>
           
             <li class="toctree-l1">
@@ -59,7 +58,7 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../Lab1/Linux/">리눅스(Linux)</a>
+    <a class="" href="../../Lab1/Linux/">Linux</a>
                 </li>
     </ul>
 	    </li>
@@ -81,7 +80,7 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../Lab3/Python/">파이썬(PYTHON)</a>
+    <a class="" href="../../Lab3/Python/">Python</a>
                 </li>
     </ul>
 	    </li>
@@ -92,7 +91,7 @@
     <ul class="subnav">
                 <li class=" current">
                     
-    <a class="current" href="./">TELLO란 무엇인가?</a>
+    <a class="current" href="./">Tello</a>
     <ul class="subnav">
             
     <li class="toctree-l3"><a href="#tello">TELLO란 무엇인가?</a></li>
@@ -135,7 +134,7 @@
     <ul class="subnav">
                 <li class="">
                     
-    <a class="" href="../../Supplement/참고자료/">수업 자료 다운로드 링크</a>
+    <a class="" href="../../Supplement/참고자료/">참고자료</a>
                 </li>
     </ul>
 	    </li>
@@ -166,7 +165,7 @@
         
       
     
-    <li>TELLO란 무엇인가?</li>
+    <li>Tello</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -182,21 +181,26 @@
 <p><img alt="tello_edu_drone" src="../img/tello-edu-drone.jpg" /></p>
 <h1 id="tello_1">TELLO 조작방법</h1>
 <h2 id="_1">어플리케이션을 이용한 조작</h2>
-<pre><code>  Android  '&lt;https://play.google.com/store/apps/details?id=com.ryzerobotics.tello_&gt;'
-  Apple  '&lt;https://apps.apple.com/kr/app/tello/id1330559633_&gt;'
-</code></pre>
+<p>Android  -  <a href="https://play.google.com/store/apps/details?id=com.ryzerobotics.tello_">https://play.google.com/store/apps/details?id=com.ryzerobotics.tello_</a></p>
+<p>Apple -  <a href="https://apps.apple.com/kr/app/tello/id1330559633_">https://apps.apple.com/kr/app/tello/id1330559633_</a></p>
 <p><img alt="Tello_application_not_linked" src="../img/Tello_application_not_linked.png" /></p>
-<p>1.모바일 장치에서 WIFI 기능을 활성화시킨 후, TELLO-xxxxxx 네트워크를 선택한다.</p>
+<h3 id="1-wifi-tello-xxxxxx">1. WIFI 기능을 활성화시킨 후, TELLO-xxxxxx 네트워크를 선택한다.</h3>
 <p><span style="color:red"><strong>“주의”</strong></span></p>
-<pre><code>    네트워크 연결 시 다른 기기와 연결되어서 드론이 비행하여 다칠 수 있으므로 각 팀별 TELLO의 고유번호를 잘 파악하여서 연결해야 한다.
+<pre><code>    네트워크 연결 시 다른 기기와 연결되어서 드론이 비행하여 다칠 수 있으므로
+
+    각 팀별 TELLO의 고유번호를 잘 파악하여서 연결해야 한다.
 </code></pre>
-<p>2.텔로(TELLO) 어플리케이션을 실행하고 텔로를 활성화시킨다.</p>
+<h3 id="2tello">2.텔로(TELLO) 어플리케이션을 실행하고 텔로를 활성화시킨다.</h3>
 <p><img alt="tello_application_image_real" src="../img/tello_application_image_real.png" /></p>
-<p>3.텔로(TELLO)를 자유롭게 조작한다.</p>
+<h3 id="3tello">3.텔로(TELLO)를 자유롭게 조작한다.</h3>
 <p><span style="color:red"><strong>“주의”</strong></span></p>
-<pre><code>    드론끼리의 충돌, 드론 날개의 직접적인 충돌로 부상이 생길 수 있으니 충분한 공간을 확보한 뒤에 드론을 비행하고 조작해보도록 한다.
+<pre><code>    드론끼리의 충돌, 드론 날개의 직접적인 충돌로 부상이 생길 수 있으니
+
+    충분한 공간을 확보한 뒤에 드론을 비행하고 조작해보도록 한다.
 </code></pre>
 <h2 id="_2">파이썬 코드를 이용한 조작</h2>
+<h3 id="_3">파이썬 코드 링크</h3>
+<p><a href="https://1drv.ms/u/s!AohfXIAoRwzimBbEfqgrjcUo7jEO?e=rbSazz">https://1drv.ms/u/s!AohfXIAoRwzimBbEfqgrjcUo7jEO?e=rbSazz</a></p>
 <p>1.WSL – Ubuntu 18.04 – LTS를 실행한다.</p>
 <p>2.Dronblocks-Tello-Python 폴더를 참조하여 조작을 실행해본다.</p>
 <p><br></p>
@@ -217,7 +221,7 @@
 <p></br>
 <br></p>
 <p></br></p>
-<h3 id="_3">참고 – 드론 명령어</h3>
+<h3 id="_4">참고 – 드론 명령어</h3>
 <table>
 <thead>
 <tr>
@@ -339,7 +343,7 @@
         <a href="../../Lab5/Color Segmentation and openCV/" class="btn btn-neutral float-right" title="Color Segmentation and openCV">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../Lab3/Python/" class="btn btn-neutral" title="파이썬(PYTHON)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../Lab3/Python/" class="btn btn-neutral" title="Python"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -353,12 +357,12 @@
 
   Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
+	  
         </div>
       </div>
 
     </section>
-
+    
   </div>
 
   <div class="rst-versions" role="note" style="cursor: pointer">
@@ -372,9 +376,7 @@
       
     </span>
 </div>
-    <script>var base_url = '../..';</script>
-    <script src="../../js/theme.js" defer></script>
-      <script src="../../search/main.js" defer></script>
+    <script src="../../js/theme.js"></script>
 
 </body>
 </html>
