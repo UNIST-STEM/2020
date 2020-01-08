@@ -52,13 +52,33 @@
     
         
     <url>
-     <loc>/Lab5/Color Segmentation and openCV/</loc>
+     <loc>/Lab5/Path Planning/</loc>
+     <lastmod>2020-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/Lab6/Color Segmentation and openCV/</loc>
      <lastmod>2020-01-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/Lab5/Line Following/</loc>
+     <loc>/Lab6/Line Following/</loc>
+     <lastmod>2020-01-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/Lab7/Machine Learning/</loc>
      <lastmod>2020-01-08</lastmod>
      <changefreq>daily</changefreq>
     </url>
