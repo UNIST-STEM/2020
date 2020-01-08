@@ -12,7 +12,8 @@ page:
   - Lab4:
     - Tello : 'Lab4/Tello.md'
   - Lab5:
-    - Path Planning: 'Lab5/Path Planning.md'
+    - Path Planning : 'Lab5/Path Planning.md'
+    - Potential Field : 'Lab5/Potential Field.md'
   - Lab6:
     - Color Segmentation : 'Lab6/Color Segmentation.md'
     - Line Following : 'Lab6/Line Follwoing.md'

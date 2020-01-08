@@ -12,7 +12,7 @@ Follower는 로봇이 앞으로 나아가면서 오차 범위를 작게 유지�
 
 ![wall_follower_image_02](img/wall_follower_image_02.png)
 
-## 뱅뱅 컨트롤러(Bang-Bang Controller)
+## 1. 뱅뱅 컨트롤러(Bang-Bang Controller)
 
 ### 기본 뱅뱅 컨트롤러
 
@@ -36,7 +36,7 @@ Follower는 로봇이 앞으로 나아가면서 오차 범위를 작게 유지�
 ![wall_follower_image_04](img/wall_follower_image_04.png)
 
 
-## 비례 미분 제어(PD Controller)
+## 2. 비례 미분 제어(PD Controller) - 참고자료
 
 ### 비례 제어 (Proportional Controller)
 
@@ -184,3 +184,22 @@ Follower는 로봇이 앞으로 나아가면서 오차 범위를 작게 유지�
 <br></br>
 
 ![wall_follower_image_07](img/wall_follower_image_07.png)
+
+
+## 3. Wall Follower - CHALLENGE!
+
+### Challenge 안내
+
+지금부터 Wall Following을 이용한 레이스 도로 주행을 연습해 볼 것이다.
+
+![image](img/not_yet)
+
+### 기본 알고리즘
+
+Wall Following은 자동차가 벽을 따라 주행하는 매우 간단한 자율주행법 방식이다. Wall Following을 구현하는 방법은 여러 가지가 있다. 가장 간단한 방법은 장애물과 자동차 측면까지 일정한 거리를 유지하는 방법이다(비례 제어 혹은 PID 제어 사용).
+
+![wall_follower_image_08](img/wall_follower_image_08.png)
+
+또 다른 방법 중에 하나는 벽일 가능성이 가장 높은 것을 찾아낸 다음, 벽의 경로를 예측하는 것이다. 완전 선형 회귀 분석을 시도해 볼 수 있지만, 가장 효율적인 방법은 아니라고 볼 수 있다. 그 외에도 'Lab05 - 01'에서 설명했었던 뱅뱅 제어(Bang-Bang Controller)를 사용하여서 벽을 상징하는 듯한 두 개의 무작위 근접점을 고른 뒤에, 차를 그들을 통과하는 선에 따르도록 할 수도 있다.
+
+![wall_follower_image_09](img/wall_follower_image_09.jpg)
