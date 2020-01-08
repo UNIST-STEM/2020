@@ -4,7 +4,7 @@ RYZE 사에서 만든 미니드론으로 핸드폰 어플리케이션과 연동�
 
 이번 STEM-CAMP에서 사용하는 기종은 TELLO-EDU 이며, 기존 TELLO보다 교육에 초점을 맞춘 프로그래밍 교육용 드론이다. 직접 Python, Scratch, Swift와 같은 프로그래밍 언어를 사용하여 조작해볼 수 있으며, 본 프로그램에서는 Python을 이용한 TELLO-EDU의 조작을 배워 볼 예정이다.
 
-[텔로 수업자료 링크](/Supplement/참고자료.md)
+[텔로 수업자료](/Supplement/참고자료.md)
 
 ![tello_edu_drone](img/tello-edu-drone.jpg)
 
