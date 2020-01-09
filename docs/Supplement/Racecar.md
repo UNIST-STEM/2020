@@ -1,16 +1,14 @@
-# RACECAR 장비 소개
+# RACECAR
 
-## RACECAR
-
-### RACECAR ROS 노드 개요
+## RACECAR ROS 노드 개요
 
 ![get_image](img/get_image.png)
 
-### RACECAR 부품 및 기능
+## RACECAR 부품 및 기능
 
 ![racecar_fusion](img/racecar_fusion.PNG)
 
-### RACECAR 센서 리스트
+## RACECAR 센서 리스트
 
 * 카메라 - simple_camera.py 노드
 
@@ -34,7 +32,7 @@ LIDAR 정보 확인방법
 * Arduino - Arduino_drive.ino 노드
 * Jetson Nano - driveNode.py / cmd_vel_mux.py / gamepad.py / joy_node.py 노드
 
-### RACECAR 초기 설정법
+## RACECAR 초기 설정법
 
 1.하단에 건전지 삽입 후, 스위치를 'on'으로 변경한다.
 
