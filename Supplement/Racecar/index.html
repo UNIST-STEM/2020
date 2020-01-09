@@ -207,7 +207,7 @@
                 <h1 id="racecar">RACECAR 장비 소개</h1>
 <h2 id="racecar_1">RACECAR</h2>
 <h3 id="racecar-ros">RACECAR ROS 노드 개요</h3>
-<p><img alt="getlmage" src="../getlmage.png" /></p>
+<p><img alt="getImage" src="../getImage.png" /></p>
 <h3 id="racecar_2">RACECAR 부품 및 기능</h3>
 <p><img alt="racecar_fusion" src="../img/racecar_fusion.jpg" /></p>
 <h3 id="racecar_3">RACECAR 센서 리스트</h3>
@@ -220,8 +220,14 @@
 <li>ydlidar-X2 - lidar_node.cpp 노드</li>
 </ul>
 <p><img alt="ydlidar_figure" src="../img/ydlidar_figure.PNG" /></p>
-<p>레이더 정보를 발행(publish)함
-'rviz' 명령어를 통해서 라이다 값을 확인해 볼 수 있음.</p>
+<p>LIDAR 정보를 발행(publish)함
+LIDAR 정보 'Rviz'로 확인하는 방법</p>
+<pre><code>  $ roslaunch ydlidar ydlidar_view.launch
+</code></pre>
+<p>LIDAR 정보 확인방법</p>
+<pre><code>  $ roslaunch ydlidar lidar.launch
+  $ rosrun ydlidar ydlidar_client
+</code></pre>
 <ul>
 <li>Arduino - Arduino_drive.ino 노드</li>
 <li>Jetson Nano - driveNode.py / cmd_vel_mux.py / gamepad.py / joy_node.py 노드</li>
@@ -235,16 +241,13 @@
 <p>라이다 케이블을 연결한다.</p>
 </li>
 <li>
-<p>조이스틱 USB 동글을 삽입한다.</p>
-</li>
-<li>
 <p>전원 케이블을 연결한다.</p>
 </li>
 <li>
 <p>공유기 설정값을 맞춘다.</p>
-<p>ssh -Xll racecar@192.168.0.'car-number'</p>
 </li>
 </ol>
+<p>ssh -Xll racecar@192.168.0.'car-number'</p>
               
             </div>
           </div>
