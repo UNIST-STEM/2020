@@ -4,7 +4,7 @@
 
 ### RACECAR ROS 노드 개요
 
-![getlmage](getlmage.png)
+![getImage](getImage.png)
 
 ### RACECAR 부품 및 기능
 
@@ -21,8 +21,15 @@
 
 ![ydlidar_figure](img/ydlidar_figure.PNG)
 
-레이더 정보를 발행(publish)함
-'rviz' 명령어를 통해서 라이다 값을 확인해 볼 수 있음.
+LIDAR 정보를 발행(publish)함
+LIDAR 정보 'Rviz'로 확인하는 방법
+
+      $ roslaunch ydlidar ydlidar_view.launch
+
+LIDAR 정보 확인방법
+
+      $ roslaunch ydlidar lidar.launch
+      $ rosrun ydlidar ydlidar_client
 
 * Arduino - Arduino_drive.ino 노드
 * Jetson Nano - driveNode.py / cmd_vel_mux.py / gamepad.py / joy_node.py 노드
@@ -33,10 +40,8 @@
 
 2. 라이다 케이블을 연결한다.
 
-3. 조이스틱 USB 동글을 삽입한다.
+3. 전원 케이블을 연결한다.
 
-4. 전원 케이블을 연결한다.
+4. 공유기 설정값을 맞춘다.
 
-5. 공유기 설정값을 맞춘다.
-
-      ssh -Xll racecar@192.168.0.'car-number'
+ssh -Xll racecar@192.168.0.'car-number'

@@ -292,8 +292,18 @@
         },
         {
             "location": "/Lab5/Potential Field/",
-            "text": "",
+            "text": "\ud3ec\ud150\uc15c \ud544\ub4dc (Potential Field)\n\n\n\ud3ec\ud150\uc15c \ud544\ub4dc\uc758 \uc791\ub3d9\ubc29\ubc95\n\n\nWall Following\uacfc\ub294 \ub2e4\ub974\uac8c \ud3ec\ud150\uc15c \ud544\ub4dc(Potential Field)\ub294 \uc8fc\ubcc0\uc758 \ubaa8\ub4e0 LIDAR \ub370\uc774\ud130\ub97c \uc0ac\uc6a9\ud558\uc5ec \uc5b4\ub5bb\uac8c \uc774\ub3d9\ud574\uc57c \ud560 \uc9c0\ub97c \uacb0\uc815\ud569\ub2c8\ub2e4. \uc774 \ubc29\ubc95\uc744 \ud1b5\ud574 \uc8fc\ubcc0\uc5d0 \ubcbd\uc758 \uc874\uc7ac \uc5ec\ubd80\uc640 \uad00\uacc4 \uc5c6\uc774 \uc5b4\ub5a4 \uacf5\uac04\uc5d0\uc11c\ub3c4 \uc790\uc720\ub86d\uac8c \uc790\uc728 \uc8fc\ud589\uc744 \uc801\uc6a9\ud560 \uc218 \uc788\uc74c\uc744 \uc758\ubbf8\ud55c\ub2e4.\n\n\n\ubaa8\ub4e0 LIDAR \ub370\uc774\ud130\uc5d0\ub294 \uc790\ub3d9\ucc28",
             "title": "Potential Field"
+        },
+        {
+            "location": "/Lab5/Potential Field/#potential-field",
+            "text": "",
+            "title": "\ud3ec\ud150\uc15c \ud544\ub4dc (Potential Field)"
+        },
+        {
+            "location": "/Lab5/Potential Field/#_1",
+            "text": "Wall Following\uacfc\ub294 \ub2e4\ub974\uac8c \ud3ec\ud150\uc15c \ud544\ub4dc(Potential Field)\ub294 \uc8fc\ubcc0\uc758 \ubaa8\ub4e0 LIDAR \ub370\uc774\ud130\ub97c \uc0ac\uc6a9\ud558\uc5ec \uc5b4\ub5bb\uac8c \uc774\ub3d9\ud574\uc57c \ud560 \uc9c0\ub97c \uacb0\uc815\ud569\ub2c8\ub2e4. \uc774 \ubc29\ubc95\uc744 \ud1b5\ud574 \uc8fc\ubcc0\uc5d0 \ubcbd\uc758 \uc874\uc7ac \uc5ec\ubd80\uc640 \uad00\uacc4 \uc5c6\uc774 \uc5b4\ub5a4 \uacf5\uac04\uc5d0\uc11c\ub3c4 \uc790\uc720\ub86d\uac8c \uc790\uc728 \uc8fc\ud589\uc744 \uc801\uc6a9\ud560 \uc218 \uc788\uc74c\uc744 \uc758\ubbf8\ud55c\ub2e4.  \ubaa8\ub4e0 LIDAR \ub370\uc774\ud130\uc5d0\ub294 \uc790\ub3d9\ucc28",
+            "title": "\ud3ec\ud150\uc15c \ud544\ub4dc\uc758 \uc791\ub3d9\ubc29\ubc95"
         },
         {
             "location": "/Lab6/Color Segmentation and openCV/",
@@ -342,7 +352,7 @@
         },
         {
             "location": "/Supplement/Racecar/",
-            "text": "RACECAR \uc7a5\ube44 \uc18c\uac1c\n\n\nRACECAR\n\n\nRACECAR ROS \ub178\ub4dc \uac1c\uc694\n\n\n\n\nRACECAR \ubd80\ud488 \ubc0f \uae30\ub2a5\n\n\n\n\nRACECAR \uc13c\uc11c \ub9ac\uc2a4\ud2b8\n\n\n\n\n\uce74\uba54\ub77c - simple_camera.py \ub178\ub4dc\n\n\n\n\n\uc774\ubbf8\uc9c0 \ud30c\uc77c\uc744 bgr \ud0c0\uc785\uc73c\ub85c \ubc1c\ud589(publish)\ud568\n'rviz'\uba85\ub839\uc5b4\ub97c \ud1b5\ud574\uc11c \uce74\uba54\ub77c \uc601\uc0c1\uc744 \ubcfc \uc218 \uc788\uc74c.\n\n\n\n\nydlidar-X2 - lidar_node.cpp \ub178\ub4dc\n\n\n\n\n\n\n\ub808\uc774\ub354 \uc815\ubcf4\ub97c \ubc1c\ud589(publish)\ud568\n'rviz' \uba85\ub839\uc5b4\ub97c \ud1b5\ud574\uc11c \ub77c\uc774\ub2e4 \uac12\uc744 \ud655\uc778\ud574 \ubcfc \uc218 \uc788\uc74c.\n\n\n\n\nArduino - Arduino_drive.ino \ub178\ub4dc\n\n\nJetson Nano - driveNode.py / cmd_vel_mux.py / gamepad.py / joy_node.py \ub178\ub4dc\n\n\n\n\nRACECAR \ucd08\uae30 \uc124\uc815\ubc95\n\n\n\n\n\n\n\ud558\ub2e8\uc5d0 \uac74\uc804\uc9c0 \uc0bd\uc785 \ud6c4, \uc2a4\uc704\uce58\ub97c 'on'\uc73c\ub85c \ubcc0\uacbd\ud55c\ub2e4.\n\n\n\n\n\n\n\ub77c\uc774\ub2e4 \ucf00\uc774\ube14\uc744 \uc5f0\uacb0\ud55c\ub2e4.\n\n\n\n\n\n\n\uc870\uc774\uc2a4\ud2f1 USB \ub3d9\uae00\uc744 \uc0bd\uc785\ud55c\ub2e4.\n\n\n\n\n\n\n\uc804\uc6d0 \ucf00\uc774\ube14\uc744 \uc5f0\uacb0\ud55c\ub2e4.\n\n\n\n\n\n\n\uacf5\uc720\uae30 \uc124\uc815\uac12\uc744 \ub9de\ucd98\ub2e4.\n\n\nssh -Xll racecar@192.168.0.'car-number'",
+            "text": "RACECAR \uc7a5\ube44 \uc18c\uac1c\n\n\nRACECAR\n\n\nRACECAR ROS \ub178\ub4dc \uac1c\uc694\n\n\n\n\nRACECAR \ubd80\ud488 \ubc0f \uae30\ub2a5\n\n\n\n\nRACECAR \uc13c\uc11c \ub9ac\uc2a4\ud2b8\n\n\n\n\n\uce74\uba54\ub77c - simple_camera.py \ub178\ub4dc\n\n\n\n\n\uc774\ubbf8\uc9c0 \ud30c\uc77c\uc744 bgr \ud0c0\uc785\uc73c\ub85c \ubc1c\ud589(publish)\ud568\n'rviz'\uba85\ub839\uc5b4\ub97c \ud1b5\ud574\uc11c \uce74\uba54\ub77c \uc601\uc0c1\uc744 \ubcfc \uc218 \uc788\uc74c.\n\n\n\n\nydlidar-X2 - lidar_node.cpp \ub178\ub4dc\n\n\n\n\n\n\nLIDAR \uc815\ubcf4\ub97c \ubc1c\ud589(publish)\ud568\nLIDAR \uc815\ubcf4 'Rviz'\ub85c \ud655\uc778\ud558\ub294 \ubc29\ubc95\n\n\n  $ roslaunch ydlidar ydlidar_view.launch\n\n\n\nLIDAR \uc815\ubcf4 \ud655\uc778\ubc29\ubc95\n\n\n  $ roslaunch ydlidar lidar.launch\n  $ rosrun ydlidar ydlidar_client\n\n\n\n\n\nArduino - Arduino_drive.ino \ub178\ub4dc\n\n\nJetson Nano - driveNode.py / cmd_vel_mux.py / gamepad.py / joy_node.py \ub178\ub4dc\n\n\n\n\nRACECAR \ucd08\uae30 \uc124\uc815\ubc95\n\n\n\n\n\n\n\ud558\ub2e8\uc5d0 \uac74\uc804\uc9c0 \uc0bd\uc785 \ud6c4, \uc2a4\uc704\uce58\ub97c 'on'\uc73c\ub85c \ubcc0\uacbd\ud55c\ub2e4.\n\n\n\n\n\n\n\ub77c\uc774\ub2e4 \ucf00\uc774\ube14\uc744 \uc5f0\uacb0\ud55c\ub2e4.\n\n\n\n\n\n\n\uc804\uc6d0 \ucf00\uc774\ube14\uc744 \uc5f0\uacb0\ud55c\ub2e4.\n\n\n\n\n\n\n\uacf5\uc720\uae30 \uc124\uc815\uac12\uc744 \ub9de\ucd98\ub2e4.\n\n\n\n\n\n\nssh -Xll racecar@192.168.0.'car-number'",
             "title": "Racecar"
         },
         {
@@ -367,12 +377,12 @@
         },
         {
             "location": "/Supplement/Racecar/#racecar_3",
-            "text": "\uce74\uba54\ub77c - simple_camera.py \ub178\ub4dc   \uc774\ubbf8\uc9c0 \ud30c\uc77c\uc744 bgr \ud0c0\uc785\uc73c\ub85c \ubc1c\ud589(publish)\ud568\n'rviz'\uba85\ub839\uc5b4\ub97c \ud1b5\ud574\uc11c \uce74\uba54\ub77c \uc601\uc0c1\uc744 \ubcfc \uc218 \uc788\uc74c.   ydlidar-X2 - lidar_node.cpp \ub178\ub4dc    \ub808\uc774\ub354 \uc815\ubcf4\ub97c \ubc1c\ud589(publish)\ud568\n'rviz' \uba85\ub839\uc5b4\ub97c \ud1b5\ud574\uc11c \ub77c\uc774\ub2e4 \uac12\uc744 \ud655\uc778\ud574 \ubcfc \uc218 \uc788\uc74c.   Arduino - Arduino_drive.ino \ub178\ub4dc  Jetson Nano - driveNode.py / cmd_vel_mux.py / gamepad.py / joy_node.py \ub178\ub4dc",
+            "text": "\uce74\uba54\ub77c - simple_camera.py \ub178\ub4dc   \uc774\ubbf8\uc9c0 \ud30c\uc77c\uc744 bgr \ud0c0\uc785\uc73c\ub85c \ubc1c\ud589(publish)\ud568\n'rviz'\uba85\ub839\uc5b4\ub97c \ud1b5\ud574\uc11c \uce74\uba54\ub77c \uc601\uc0c1\uc744 \ubcfc \uc218 \uc788\uc74c.   ydlidar-X2 - lidar_node.cpp \ub178\ub4dc    LIDAR \uc815\ubcf4\ub97c \ubc1c\ud589(publish)\ud568\nLIDAR \uc815\ubcf4 'Rviz'\ub85c \ud655\uc778\ud558\ub294 \ubc29\ubc95    $ roslaunch ydlidar ydlidar_view.launch  LIDAR \uc815\ubcf4 \ud655\uc778\ubc29\ubc95    $ roslaunch ydlidar lidar.launch\n  $ rosrun ydlidar ydlidar_client   Arduino - Arduino_drive.ino \ub178\ub4dc  Jetson Nano - driveNode.py / cmd_vel_mux.py / gamepad.py / joy_node.py \ub178\ub4dc",
             "title": "RACECAR \uc13c\uc11c \ub9ac\uc2a4\ud2b8"
         },
         {
             "location": "/Supplement/Racecar/#racecar_4",
-            "text": "\ud558\ub2e8\uc5d0 \uac74\uc804\uc9c0 \uc0bd\uc785 \ud6c4, \uc2a4\uc704\uce58\ub97c 'on'\uc73c\ub85c \ubcc0\uacbd\ud55c\ub2e4.    \ub77c\uc774\ub2e4 \ucf00\uc774\ube14\uc744 \uc5f0\uacb0\ud55c\ub2e4.    \uc870\uc774\uc2a4\ud2f1 USB \ub3d9\uae00\uc744 \uc0bd\uc785\ud55c\ub2e4.    \uc804\uc6d0 \ucf00\uc774\ube14\uc744 \uc5f0\uacb0\ud55c\ub2e4.    \uacf5\uc720\uae30 \uc124\uc815\uac12\uc744 \ub9de\ucd98\ub2e4.  ssh -Xll racecar@192.168.0.'car-number'",
+            "text": "\ud558\ub2e8\uc5d0 \uac74\uc804\uc9c0 \uc0bd\uc785 \ud6c4, \uc2a4\uc704\uce58\ub97c 'on'\uc73c\ub85c \ubcc0\uacbd\ud55c\ub2e4.    \ub77c\uc774\ub2e4 \ucf00\uc774\ube14\uc744 \uc5f0\uacb0\ud55c\ub2e4.    \uc804\uc6d0 \ucf00\uc774\ube14\uc744 \uc5f0\uacb0\ud55c\ub2e4.    \uacf5\uc720\uae30 \uc124\uc815\uac12\uc744 \ub9de\ucd98\ub2e4.    ssh -Xll racecar@192.168.0.'car-number'",
             "title": "RACECAR \ucd08\uae30 \uc124\uc815\ubc95"
         },
         {
