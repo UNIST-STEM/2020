@@ -1,4 +1,4 @@
-# RACECAR
+# RACECAR를 위한 기초 개념
 
 ## RACECAR ROS 노드 개요
 
@@ -32,14 +32,16 @@ LIDAR 정보 확인방법
 * Arduino - Arduino_drive.ino 노드
 * Jetson Nano - driveNode.py / cmd_vel_mux.py / gamepad.py / joy_node.py 노드
 
-## RACECAR 초기 설정법
+## RACECAR 사용법
 
 1.하단에 건전지 삽입 후, 스위치를 'on'으로 변경한다.
 
-2.라이다 케이블을 연결한다.
+2.Lidar 케이블을 연결한다.
 
 3.전원 케이블을 연결한다.
 
-4.공유기 설정값을 맞춘다.
+4.노트북을 열어 racecar-<span style="color:red">RACECAR_NUMBER</span> 공유기에 접속한다.
 
-ssh -Xll racecar@192.168.0. <span style ="color:red">RACECAR_NUMBER</span>
+5.WSL을 열어 ssh를 실행한다
+
+ssh -X racecar@192.168.0. <span style ="color:red">RACECAR_NUMBER</span>

@@ -8,7 +8,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Racecar - UNIST STEM-CAMP Website</title>
+  <title>RACECAR - UNIST STEM-CAMP Website</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
@@ -17,9 +17,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Racecar";
-    var mkdocs_page_input_path = "Supplement/Racecar.md";
-    var mkdocs_page_url = "/Supplement/Racecar/";
+    var mkdocs_page_name = "RACECAR";
+    var mkdocs_page_input_path = "Supplement/RACECAR.md";
+    var mkdocs_page_url = "/Supplement/RACECAR/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -143,10 +143,10 @@
     <ul class="subnav">
                 <li class=" current">
                     
-    <a class="current" href="./">Racecar</a>
+    <a class="current" href="./">RACECAR</a>
     <ul class="subnav">
             
-    <li class="toctree-l3"><a href="#racecar">RACECAR</a></li>
+    <li class="toctree-l3"><a href="#racecar">RACECAR를 위한 기초 개념</a></li>
     
         <ul>
         
@@ -156,7 +156,7 @@
         
             <li><a class="toctree-l4" href="#racecar_2">RACECAR 센서 리스트</a></li>
         
-            <li><a class="toctree-l4" href="#racecar_3">RACECAR 초기 설정법</a></li>
+            <li><a class="toctree-l4" href="#racecar_3">RACECAR 사용법</a></li>
         
         </ul>
     
@@ -200,7 +200,7 @@
         
       
     
-    <li>Racecar</li>
+    <li>RACECAR</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -210,7 +210,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="racecar">RACECAR</h1>
+                <h1 id="racecar">RACECAR를 위한 기초 개념</h1>
 <h2 id="racecar-ros">RACECAR ROS 노드 개요</h2>
 <p><img alt="get_image" src="../img/get_image.png" /></p>
 <h2 id="racecar_1">RACECAR 부품 및 기능</h2>
@@ -237,12 +237,13 @@ LIDAR 정보 'Rviz'로 확인하는 방법</p>
 <li>Arduino - Arduino_drive.ino 노드</li>
 <li>Jetson Nano - driveNode.py / cmd_vel_mux.py / gamepad.py / joy_node.py 노드</li>
 </ul>
-<h2 id="racecar_3">RACECAR 초기 설정법</h2>
+<h2 id="racecar_3">RACECAR 사용법</h2>
 <p>1.하단에 건전지 삽입 후, 스위치를 'on'으로 변경한다.</p>
-<p>2.라이다 케이블을 연결한다.</p>
+<p>2.Lidar 케이블을 연결한다.</p>
 <p>3.전원 케이블을 연결한다.</p>
-<p>4.공유기 설정값을 맞춘다.</p>
-<p>ssh -Xll racecar@192.168.0. <span style ="color:red">RACECAR_NUMBER</span></p>
+<p>4.노트북을 열어 racecar-<span style="color:red">RACECAR_NUMBER</span> 공유기에 접속한다.</p>
+<p>5.WSL을 열어 ssh를 실행한다</p>
+<p>ssh -X racecar@192.168.0. <span style ="color:red">RACECAR_NUMBER</span></p>
               
             </div>
           </div>

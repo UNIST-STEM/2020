@@ -361,34 +361,34 @@
             "title": "Machine Learning"
         },
         {
-            "location": "/Supplement/Racecar/",
-            "text": "RACECAR\n\n\nRACECAR ROS \ub178\ub4dc \uac1c\uc694\n\n\n\n\nRACECAR \ubd80\ud488 \ubc0f \uae30\ub2a5\n\n\n\n\nRACECAR \uc13c\uc11c \ub9ac\uc2a4\ud2b8\n\n\n\n\n\uce74\uba54\ub77c - simple_camera.py \ub178\ub4dc\n\n\n\n\n\uc774\ubbf8\uc9c0 \ud30c\uc77c\uc744 bgr \ud0c0\uc785\uc73c\ub85c \ubc1c\ud589(publish)\ud568\n'rviz'\uba85\ub839\uc5b4\ub97c \ud1b5\ud574\uc11c \uce74\uba54\ub77c \uc601\uc0c1\uc744 \ubcfc \uc218 \uc788\uc74c.\n\n\n\n\nydlidar-X2 - lidar_node.cpp \ub178\ub4dc\n\n\n\n\n\n\nLIDAR \uc815\ubcf4\ub97c \ubc1c\ud589(publish)\ud568\nLIDAR \uc815\ubcf4 'Rviz'\ub85c \ud655\uc778\ud558\ub294 \ubc29\ubc95\n\n\n  $ roslaunch ydlidar ydlidar_view.launch\n\n\n\nLIDAR \uc815\ubcf4 \ud655\uc778\ubc29\ubc95\n\n\n  $ roslaunch ydlidar lidar.launch\n  $ rosrun ydlidar ydlidar_client\n\n\n\n\n\nArduino - Arduino_drive.ino \ub178\ub4dc\n\n\nJetson Nano - driveNode.py / cmd_vel_mux.py / gamepad.py / joy_node.py \ub178\ub4dc\n\n\n\n\nRACECAR \ucd08\uae30 \uc124\uc815\ubc95\n\n\n1.\ud558\ub2e8\uc5d0 \uac74\uc804\uc9c0 \uc0bd\uc785 \ud6c4, \uc2a4\uc704\uce58\ub97c 'on'\uc73c\ub85c \ubcc0\uacbd\ud55c\ub2e4.\n\n\n2.\ub77c\uc774\ub2e4 \ucf00\uc774\ube14\uc744 \uc5f0\uacb0\ud55c\ub2e4.\n\n\n3.\uc804\uc6d0 \ucf00\uc774\ube14\uc744 \uc5f0\uacb0\ud55c\ub2e4.\n\n\n4.\uacf5\uc720\uae30 \uc124\uc815\uac12\uc744 \ub9de\ucd98\ub2e4.\n\n\nssh -Xll racecar@192.168.0. \nRACECAR_NUMBER",
-            "title": "Racecar"
-        },
-        {
-            "location": "/Supplement/Racecar/#racecar",
-            "text": "",
+            "location": "/Supplement/RACECAR/",
+            "text": "RACECAR\ub97c \uc704\ud55c \uae30\ucd08 \uac1c\ub150\n\n\nRACECAR ROS \ub178\ub4dc \uac1c\uc694\n\n\n\n\nRACECAR \ubd80\ud488 \ubc0f \uae30\ub2a5\n\n\n\n\nRACECAR \uc13c\uc11c \ub9ac\uc2a4\ud2b8\n\n\n\n\n\uce74\uba54\ub77c - simple_camera.py \ub178\ub4dc\n\n\n\n\n\uc774\ubbf8\uc9c0 \ud30c\uc77c\uc744 bgr \ud0c0\uc785\uc73c\ub85c \ubc1c\ud589(publish)\ud568\n'rviz'\uba85\ub839\uc5b4\ub97c \ud1b5\ud574\uc11c \uce74\uba54\ub77c \uc601\uc0c1\uc744 \ubcfc \uc218 \uc788\uc74c.\n\n\n\n\nydlidar-X2 - lidar_node.cpp \ub178\ub4dc\n\n\n\n\n\n\nLIDAR \uc815\ubcf4\ub97c \ubc1c\ud589(publish)\ud568\nLIDAR \uc815\ubcf4 'Rviz'\ub85c \ud655\uc778\ud558\ub294 \ubc29\ubc95\n\n\n  $ roslaunch ydlidar ydlidar_view.launch\n\n\n\nLIDAR \uc815\ubcf4 \ud655\uc778\ubc29\ubc95\n\n\n  $ roslaunch ydlidar lidar.launch\n  $ rosrun ydlidar ydlidar_client\n\n\n\n\n\nArduino - Arduino_drive.ino \ub178\ub4dc\n\n\nJetson Nano - driveNode.py / cmd_vel_mux.py / gamepad.py / joy_node.py \ub178\ub4dc\n\n\n\n\nRACECAR \uc0ac\uc6a9\ubc95\n\n\n1.\ud558\ub2e8\uc5d0 \uac74\uc804\uc9c0 \uc0bd\uc785 \ud6c4, \uc2a4\uc704\uce58\ub97c 'on'\uc73c\ub85c \ubcc0\uacbd\ud55c\ub2e4.\n\n\n2.Lidar \ucf00\uc774\ube14\uc744 \uc5f0\uacb0\ud55c\ub2e4.\n\n\n3.\uc804\uc6d0 \ucf00\uc774\ube14\uc744 \uc5f0\uacb0\ud55c\ub2e4.\n\n\n4.\ub178\ud2b8\ubd81\uc744 \uc5f4\uc5b4 racecar-\nRACECAR_NUMBER\n \uacf5\uc720\uae30\uc5d0 \uc811\uc18d\ud55c\ub2e4.\n\n\n5.WSL\uc744 \uc5f4\uc5b4 ssh\ub97c \uc2e4\ud589\ud55c\ub2e4\n\n\nssh -X racecar@192.168.0. \nRACECAR_NUMBER",
             "title": "RACECAR"
         },
         {
-            "location": "/Supplement/Racecar/#racecar-ros",
+            "location": "/Supplement/RACECAR/#racecar",
+            "text": "",
+            "title": "RACECAR\ub97c \uc704\ud55c \uae30\ucd08 \uac1c\ub150"
+        },
+        {
+            "location": "/Supplement/RACECAR/#racecar-ros",
             "text": "",
             "title": "RACECAR ROS \ub178\ub4dc \uac1c\uc694"
         },
         {
-            "location": "/Supplement/Racecar/#racecar_1",
+            "location": "/Supplement/RACECAR/#racecar_1",
             "text": "",
             "title": "RACECAR \ubd80\ud488 \ubc0f \uae30\ub2a5"
         },
         {
-            "location": "/Supplement/Racecar/#racecar_2",
+            "location": "/Supplement/RACECAR/#racecar_2",
             "text": "\uce74\uba54\ub77c - simple_camera.py \ub178\ub4dc   \uc774\ubbf8\uc9c0 \ud30c\uc77c\uc744 bgr \ud0c0\uc785\uc73c\ub85c \ubc1c\ud589(publish)\ud568\n'rviz'\uba85\ub839\uc5b4\ub97c \ud1b5\ud574\uc11c \uce74\uba54\ub77c \uc601\uc0c1\uc744 \ubcfc \uc218 \uc788\uc74c.   ydlidar-X2 - lidar_node.cpp \ub178\ub4dc    LIDAR \uc815\ubcf4\ub97c \ubc1c\ud589(publish)\ud568\nLIDAR \uc815\ubcf4 'Rviz'\ub85c \ud655\uc778\ud558\ub294 \ubc29\ubc95    $ roslaunch ydlidar ydlidar_view.launch  LIDAR \uc815\ubcf4 \ud655\uc778\ubc29\ubc95    $ roslaunch ydlidar lidar.launch\n  $ rosrun ydlidar ydlidar_client   Arduino - Arduino_drive.ino \ub178\ub4dc  Jetson Nano - driveNode.py / cmd_vel_mux.py / gamepad.py / joy_node.py \ub178\ub4dc",
             "title": "RACECAR \uc13c\uc11c \ub9ac\uc2a4\ud2b8"
         },
         {
-            "location": "/Supplement/Racecar/#racecar_3",
-            "text": "1.\ud558\ub2e8\uc5d0 \uac74\uc804\uc9c0 \uc0bd\uc785 \ud6c4, \uc2a4\uc704\uce58\ub97c 'on'\uc73c\ub85c \ubcc0\uacbd\ud55c\ub2e4.  2.\ub77c\uc774\ub2e4 \ucf00\uc774\ube14\uc744 \uc5f0\uacb0\ud55c\ub2e4.  3.\uc804\uc6d0 \ucf00\uc774\ube14\uc744 \uc5f0\uacb0\ud55c\ub2e4.  4.\uacf5\uc720\uae30 \uc124\uc815\uac12\uc744 \ub9de\ucd98\ub2e4.  ssh -Xll racecar@192.168.0.  RACECAR_NUMBER",
-            "title": "RACECAR \ucd08\uae30 \uc124\uc815\ubc95"
+            "location": "/Supplement/RACECAR/#racecar_3",
+            "text": "1.\ud558\ub2e8\uc5d0 \uac74\uc804\uc9c0 \uc0bd\uc785 \ud6c4, \uc2a4\uc704\uce58\ub97c 'on'\uc73c\ub85c \ubcc0\uacbd\ud55c\ub2e4.  2.Lidar \ucf00\uc774\ube14\uc744 \uc5f0\uacb0\ud55c\ub2e4.  3.\uc804\uc6d0 \ucf00\uc774\ube14\uc744 \uc5f0\uacb0\ud55c\ub2e4.  4.\ub178\ud2b8\ubd81\uc744 \uc5f4\uc5b4 racecar- RACECAR_NUMBER  \uacf5\uc720\uae30\uc5d0 \uc811\uc18d\ud55c\ub2e4.  5.WSL\uc744 \uc5f4\uc5b4 ssh\ub97c \uc2e4\ud589\ud55c\ub2e4  ssh -X racecar@192.168.0.  RACECAR_NUMBER",
+            "title": "RACECAR \uc0ac\uc6a9\ubc95"
         },
         {
             "location": "/Supplement/WSL/",
@@ -412,33 +412,28 @@
         },
         {
             "location": "/Supplement/\ucc38\uace0\uc790\ub8cc/",
-            "text": "\uc218\uc5c5 \uc790\ub8cc \ub2e4\uc6b4\ub85c\ub4dc \ub9c1\ud06c\n\n\n\ub9ac\ub205\uc2a4 \uc218\uc5c5\uc790\ub8cc\n\n\n'\nhttps://1drv.ms/u/s!AohfXIAoRwzimBMrCYv9jVmcvsIk?e=mA4Zry\n'\n\n\nROS \uc218\uc5c5\uc790\ub8cc\n\n\n'\nhttps://1drv.ms/u/s!AohfXIAoRwzimBE7z7moR1iZa9g2?e=WIDLoM\n'\n\n\nPYTHON \uc218\uc5c5\uc790\ub8cc\n\n\n'\nhttps://1drv.ms/u/s!AohfXIAoRwzimBTFRBx_Ob6anT0j?e=fawwBM\n'\n\n\nTELLO \uc218\uc5c5\uc790\ub8cc\n\n\n'\nhttps://1drv.ms/u/s!AohfXIAoRwzimBqbLkI8ubHu56fq?e=kTOTAK\n'",
+            "text": "\ucea0\ud504 \uac04 \uac15\uc758\ub178\ud2b8, \uc0d8\ud50c\ucf54\ub4dc \ub4f1 \ud544\uc694\ud55c \uc790\ub8cc\ub97c \ub2e4\uc6b4\ubc1b\uc744 \uc218 \uc788\ub294 \uacf5\uac04\n\n\n1. \uac15\uc758\uc790\ub8cc\n\n\nhttps://unistackr0-my.sharepoint.com/:f:/g/personal/zhengxia95_unist_ac_kr/EuT6mjBaiY5AuebT1VIym18Bout1EqTIsmasXEV531kryw?e=7WCCH0\n\n\n2. \uc0d8\ud50c\ucf54\ub4dc\n\n\nhttps://unistackr0-my.sharepoint.com/:f:/g/personal/zhengxia95_unist_ac_kr/Ep0dw40TIJFDna-yoihXmdsBjbN5UOOOjlYzxg3u8iIw2Q?e=ykP4ea\n\n\n3. \ucf54\ub4dc\uc81c\ucd9c\n\n\nhttps://unistackr0-my.sharepoint.com/:f:/g/personal/zhengxia95_unist_ac_kr/EnwbsG_vHSpAvdHk33bcfaoBk6zJMWlasxD1MF94eL4uNQ?e=dv3B0D\n\n\n4. \uae30\ud0c0 \ucc38\uace0\uc790\ub8cc\n\n\nhttps://unistackr0-my.sharepoint.com/:f:/g/personal/zhengxia95_unist_ac_kr/EkOk75WILfZEjJkFcVMFjSABEfY2NimsWZFo4EZ_mB-ojw?e=zpwGhK",
             "title": "\ucc38\uace0\uc790\ub8cc"
         },
         {
-            "location": "/Supplement/\ucc38\uace0\uc790\ub8cc/#_1",
-            "text": "",
-            "title": "\uc218\uc5c5 \uc790\ub8cc \ub2e4\uc6b4\ub85c\ub4dc \ub9c1\ud06c"
+            "location": "/Supplement/\ucc38\uace0\uc790\ub8cc/#1",
+            "text": "https://unistackr0-my.sharepoint.com/:f:/g/personal/zhengxia95_unist_ac_kr/EuT6mjBaiY5AuebT1VIym18Bout1EqTIsmasXEV531kryw?e=7WCCH0",
+            "title": "1. \uac15\uc758\uc790\ub8cc"
         },
         {
-            "location": "/Supplement/\ucc38\uace0\uc790\ub8cc/#_2",
-            "text": "' https://1drv.ms/u/s!AohfXIAoRwzimBMrCYv9jVmcvsIk?e=mA4Zry '",
-            "title": "\ub9ac\ub205\uc2a4 \uc218\uc5c5\uc790\ub8cc"
+            "location": "/Supplement/\ucc38\uace0\uc790\ub8cc/#2",
+            "text": "https://unistackr0-my.sharepoint.com/:f:/g/personal/zhengxia95_unist_ac_kr/Ep0dw40TIJFDna-yoihXmdsBjbN5UOOOjlYzxg3u8iIw2Q?e=ykP4ea",
+            "title": "2. \uc0d8\ud50c\ucf54\ub4dc"
         },
         {
-            "location": "/Supplement/\ucc38\uace0\uc790\ub8cc/#ros",
-            "text": "' https://1drv.ms/u/s!AohfXIAoRwzimBE7z7moR1iZa9g2?e=WIDLoM '",
-            "title": "ROS \uc218\uc5c5\uc790\ub8cc"
+            "location": "/Supplement/\ucc38\uace0\uc790\ub8cc/#3",
+            "text": "https://unistackr0-my.sharepoint.com/:f:/g/personal/zhengxia95_unist_ac_kr/EnwbsG_vHSpAvdHk33bcfaoBk6zJMWlasxD1MF94eL4uNQ?e=dv3B0D",
+            "title": "3. \ucf54\ub4dc\uc81c\ucd9c"
         },
         {
-            "location": "/Supplement/\ucc38\uace0\uc790\ub8cc/#python",
-            "text": "' https://1drv.ms/u/s!AohfXIAoRwzimBTFRBx_Ob6anT0j?e=fawwBM '",
-            "title": "PYTHON \uc218\uc5c5\uc790\ub8cc"
-        },
-        {
-            "location": "/Supplement/\ucc38\uace0\uc790\ub8cc/#tello",
-            "text": "' https://1drv.ms/u/s!AohfXIAoRwzimBqbLkI8ubHu56fq?e=kTOTAK '",
-            "title": "TELLO \uc218\uc5c5\uc790\ub8cc"
+            "location": "/Supplement/\ucc38\uace0\uc790\ub8cc/#4",
+            "text": "https://unistackr0-my.sharepoint.com/:f:/g/personal/zhengxia95_unist_ac_kr/EkOk75WILfZEjJkFcVMFjSABEfY2NimsWZFo4EZ_mB-ojw?e=zpwGhK",
+            "title": "4. \uae30\ud0c0 \ucc38\uace0\uc790\ub8cc"
         }
     ]
 }
