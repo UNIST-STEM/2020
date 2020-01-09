@@ -207,9 +207,9 @@
                 <h1 id="racecar">RACECAR 장비 소개</h1>
 <h2 id="racecar_1">RACECAR</h2>
 <h3 id="racecar-ros">RACECAR ROS 노드 개요</h3>
-<p><img alt="getImage" src="../getImage.png" /></p>
+<p><img alt="get_image" src="../img/get_image.png" /></p>
 <h3 id="racecar_2">RACECAR 부품 및 기능</h3>
-<p><img alt="racecar_fusion" src="../img/racecar_fusion.jpg" /></p>
+<p><img alt="racecar_fusion" src="../img/racecar_fusion.PNG" /></p>
 <h3 id="racecar_3">RACECAR 센서 리스트</h3>
 <ul>
 <li>카메라 - simple_camera.py 노드</li>
@@ -219,7 +219,7 @@
 <ul>
 <li>ydlidar-X2 - lidar_node.cpp 노드</li>
 </ul>
-<p><img alt="ydlidar_figure" src="../img/ydlidar_figure.PNG" /></p>
+<p><img alt="ydlidar_figure" src="../img/lidar_figure.png" /></p>
 <p>LIDAR 정보를 발행(publish)함
 LIDAR 정보 'Rviz'로 확인하는 방법</p>
 <pre><code>  $ roslaunch ydlidar ydlidar_view.launch
@@ -233,21 +233,11 @@ LIDAR 정보 'Rviz'로 확인하는 방법</p>
 <li>Jetson Nano - driveNode.py / cmd_vel_mux.py / gamepad.py / joy_node.py 노드</li>
 </ul>
 <h3 id="racecar_4">RACECAR 초기 설정법</h3>
-<ol>
-<li>
-<p>하단에 건전지 삽입 후, 스위치를 'on'으로 변경한다.</p>
-</li>
-<li>
-<p>라이다 케이블을 연결한다.</p>
-</li>
-<li>
-<p>전원 케이블을 연결한다.</p>
-</li>
-<li>
-<p>공유기 설정값을 맞춘다.</p>
-</li>
-</ol>
-<p>ssh -Xll racecar@192.168.0.'car-number'</p>
+<p>1.하단에 건전지 삽입 후, 스위치를 'on'으로 변경한다.</p>
+<p>2.라이다 케이블을 연결한다.</p>
+<p>3.전원 케이블을 연결한다.</p>
+<p>4.공유기 설정값을 맞춘다.</p>
+<p>ssh -Xll racecar@192.168.0. <span style ="color:red">RACECAR_NUMBER</span></p>
               
             </div>
           </div>

@@ -4,11 +4,11 @@
 
 ### RACECAR ROS 노드 개요
 
-![getImage](getImage.png)
+![get_image](img/get_image.png)
 
 ### RACECAR 부품 및 기능
 
-![racecar_fusion](img/racecar_fusion.jpg)
+![racecar_fusion](img/racecar_fusion.PNG)
 
 ### RACECAR 센서 리스트
 
@@ -19,7 +19,7 @@
 
 * ydlidar-X2 - lidar_node.cpp 노드
 
-![ydlidar_figure](img/ydlidar_figure.PNG)
+![ydlidar_figure](img/lidar_figure.png)
 
 LIDAR 정보를 발행(publish)함
 LIDAR 정보 'Rviz'로 확인하는 방법
@@ -36,12 +36,12 @@ LIDAR 정보 확인방법
 
 ### RACECAR 초기 설정법
 
-1. 하단에 건전지 삽입 후, 스위치를 'on'으로 변경한다.
+1.하단에 건전지 삽입 후, 스위치를 'on'으로 변경한다.
 
-2. 라이다 케이블을 연결한다.
+2.라이다 케이블을 연결한다.
 
-3. 전원 케이블을 연결한다.
+3.전원 케이블을 연결한다.
 
-4. 공유기 설정값을 맞춘다.
+4.공유기 설정값을 맞춘다.
 
-ssh -Xll racecar@192.168.0.'car-number'
+ssh -Xll racecar@192.168.0. <span style ="color:red">RACECAR_NUMBER</span>
