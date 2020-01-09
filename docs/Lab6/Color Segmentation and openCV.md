@@ -17,7 +17,7 @@
  1. 사용하게 될 HSV 필터의 개념을 정확히 이해한다.
  2. 주황색깔 테이프를 인식할 수 있도록 하는 코드를 작성한다.
 
-## Part 0: Setup
+## 0: Setup
 
  `이 링크`에서 필요한 파일을 다운로드할 수 있다. 주로 `slider_colorsegmentation.py`, `driveNode.py`와 함께 작업하게 될 것이다.
  자동차에 있는 `Jetson Nano`에서 다음 코드가 잘 작동되는지 확인해보자.
@@ -26,10 +26,10 @@
     import cv2
     cv2.__version__
 
- 위의 파일을 `raccar_ws/src` 내의 스크립트 폴더에 넣으십시오.
+ 위의 파일을 `raccar_ws/src` 내의 스크립트 폴더에 넣는다.
 
 
-## part 1 : HSV필터를 이용해서 색을 정확히 인식하자
+## 1 : HSV필터를 이용해서 색을 정확히 인식하자
  우선 `slider_colorsegmentation.py` 를 실행하면, 총 두개의 창이 뜨게 된다.
  하나는 HSV 필터 설정을 할 수 있는 창이고, 다른 하나는 HSV 필터가 적용되어 카메라의 현재 촬영중인 이미지를 흑백으로 표현하는 창이다.  
 
@@ -39,7 +39,7 @@
  각각의 색상, 채도, 명도의 low와 high를 이용해 제공된 주황색 테이프를 잘 인식할 수 있도록 설정해라. (설정된 HSV 필터는 테이프의 영역만을 흰색으로 표현해야 한다.)
 
 
-## part 2 : Color Segmentation을 이용한 개체 감지(detection)
+## 2 : Color Segmentation을 이용한 개체 감지(detection)
  여러분이 Part1에서 구한 HSV필터의 설정값은 이제 자동차가 주황색 선로만 따라 움직일 수 있도록 하는 기본 설정값 중 하나이다.
 
  `color_segmentation`에 들어가면 주석으로 `To do` 라고 작성되어 있는 부분이 있다.
