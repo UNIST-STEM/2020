@@ -20,7 +20,7 @@
 ![ydlidar_figure](img/lidar_figure.png)
 
 LIDAR 정보를 발행(publish)함
-LIDAR 정보 'Rviz'로 확인하는 방법
+LIDAR 정보 `Rviz`로 확인하는 방법
 
       $ roslaunch ydlidar ydlidar_view.launch
 
@@ -40,8 +40,10 @@ LIDAR 정보 확인방법
 
 3.전원 케이블을 연결한다.
 
-4.노트북을 열어 racecar-<span style="color:red">RACECAR_NUMBER</span> 공유기에 접속한다.
+4.조이스틱 동글을 연결한다.
 
-5.WSL을 열어 ssh를 실행한다
+5.노트북을 열어 racecar-<span style="color:red">RACECAR_NUMBER</span> 공유기에 접속한다.
+
+6.WSL을 열어 ssh를 실행한다
 
 ssh -X racecar@192.168.0. <span style ="color:red">RACECAR_NUMBER</span>

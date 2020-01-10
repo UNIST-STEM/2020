@@ -3,21 +3,21 @@ theme: readthedocs
 
 page:
   - Home: index.md
-  - Lab1:
+  - Lab1 :
     - Linux : 'Lab1/Linux.md'
-  - Lab2:
+  - Lab2 :
     - ROS : 'Lab2/ROS.md'
-  - Lab3:
+  - Lab3 :
     - Python : 'Lab3/Python.md'
-  - Lab4:
+  - Lab4 :
     - Tello : 'Lab4/Tello.md'
-  - Lab5:
+  - Lab5 :
     - Path Planning : 'Lab5/Path Planning.md'
     - Potential Field : 'Lab5/Potential Field.md'
-  - Lab6:
+  - Lab6 :
     - Color Segmentation : 'Lab6/Color Segmentation.md'
     - Line Following : 'Lab6/Line Follwoing.md'
-  - Lab7:
+  - Lab7 :
     - Machine Learning: 'Lab7/Machine Learning.md'
   - 참고자료:
     - 참고자료 : Supplement/참고자료.md
