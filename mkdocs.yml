@@ -1,5 +1,6 @@
 site_name: UNIST STEM-CAMP Website
 theme: readthedocs
+markdown-extensions: admonition
 
 page:
   - Home: index.md
