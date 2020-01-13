@@ -97,7 +97,7 @@ title은 이미지를 띄우는 창의 이름이며 imgae는 numpy.ndarray 형�
 
       >>> import cv2
       >>> import numpy as np
-
+      >>>
       >>> img = cv2.imread('STEM.jpg', cv2.IMREAD_COLOR)
       >>> pixel = img[100,200]
       >>> print px
